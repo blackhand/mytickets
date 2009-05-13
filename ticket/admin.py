@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Event, Ticket, Auditorium, Province, Country
+from models import Event, Ticket, Auditorium, Province, Country, Artist
 
 
 class ProvinceAdmin(admin.ModelAdmin):
@@ -17,8 +17,12 @@ class EventAdmin(admin.ModelAdmin):
 class TicketAdmin(admin.ModelAdmin):
     pass
 
+class ArtistAdmin(admin.ModelAdmin):
+    pass
+
 admin.site.register(Province, ProvinceAdmin)
 admin.site.register(Country, CountryAdmin)
 admin.site.register(Auditorium, AuditoriumAdmin)
 admin.site.register(Event, EventAdmin)
+admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Ticket, TicketAdmin)

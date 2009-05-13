@@ -87,6 +87,7 @@ INSTALLED_APPS = (
     'django_extensions',
 
     # Mytickets apps
+    'cart',
     'ticket',
 )
 
