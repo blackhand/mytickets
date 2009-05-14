@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 
 from django.db import models
+from django.contrib.auth.models import User
 
 from common.models import AuditableModel, NamedModel
 
-from django.contrib.auth.models import User
-
+from sorl.thumbnail.fields import ImageWithThumbnailsField
 
 
  # Location Models
@@ -37,6 +37,15 @@ class Category(NamedModel, AuditableModel):
 class Artist(NamedModel, AuditableModel):
     """ Artist Model """
     biography = models.TextField()
+    image = ImageWithThumbnailsField(
+        upload_to='artist_images',
+        thumbnail={'size': (200, 200)},
+        extra_thumbnails={
+            'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
+            'small': {'size': (100, 100)},
+            'large': {'size': (400, 400)},
+            }
+        )
 
 
 class Event(NamedModel, AuditableModel):
@@ -47,6 +56,15 @@ class Event(NamedModel, AuditableModel):
     description = models.TextField()
     start_date = models.DateField()
     end_date = models.DateField()
+    image = ImageWithThumbnailsField(
+        upload_to='event_images',
+        thumbnail={'size': (200, 200)},
+        extra_thumbnails={
+            'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
+            'small': {'size': (100, 100)},
+            'large': {'size': (400, 400)},
+            }
+        )
 
 
 class Zone(NamedModel, AuditableModel):
