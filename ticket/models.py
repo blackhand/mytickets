@@ -44,7 +44,8 @@ class Artist(NamedModel, AuditableModel):
             'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
             'small': {'size': (100, 100)},
             'large': {'size': (400, 400)},
-            }
+            },
+        null=True, blank=True
         )
 
 
@@ -63,7 +64,8 @@ class Event(NamedModel, AuditableModel):
             'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
             'small': {'size': (100, 100)},
             'large': {'size': (400, 400)},
-            }
+            },
+        null=True, blank=True
         )
 
 

@@ -9,10 +9,11 @@ class Migration:
     def forwards(self, orm):
         
         # Adding field 'Artist.image'
-        db.add_column('ticket_artist', 'image', ImageWithThumbnailsField(extra_thumbnails={'icon':{'size':(16,16),'options':['crop','upscale']},'small':{'size':(100,100)},'large':{'size':(400,400)},}, upload_to='artist_images', thumbnail={'size':(200,200)}))
+        db.add_column('ticket_artist', 'image', ImageWithThumbnailsField(extra_thumbnails={'icon':{'size':(16,16),'options':['crop','upscale']},'small':{'size':(100,100)},'large':{'size':(400,400)},}, upload_to='artist_images', thumbnail={'size':(200,200)},null=True,blank=True))
+
         
         # Adding field 'Event.image'
-        db.add_column('ticket_event', 'image', ImageWithThumbnailsField(extra_thumbnails={'icon':{'size':(16,16),'options':['crop','upscale']},'small':{'size':(100,100)},'large':{'size':(400,400)},}, upload_to='event_images', thumbnail={'size':(200,200)}))
+        db.add_column('ticket_event', 'image', ImageWithThumbnailsField(extra_thumbnails={'icon':{'size':(16,16),'options':['crop','upscale']},'small':{'size':(100,100)},'large':{'size':(400,400)},}, upload_to='event_images', thumbnail={'size':(200,200)},null=True,blank=True))
         
     
     
