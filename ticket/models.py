@@ -89,7 +89,8 @@ class Ticket(NamedModel, AuditableModel):
             limit_choices_to = {'event__exact': event}
             )
     sell_by = models.ForeignKey(Seller, null=True, blank=True)
-    
+    bought_by = models.OneToOneField(Buyer, null=True, blank=True)
+  
 
 
 
