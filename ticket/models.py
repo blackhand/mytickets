@@ -2,6 +2,7 @@
 
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.translation import ugettext as _
 
 from common.models import AuditableModel, NamedModel
 
@@ -13,10 +14,18 @@ from sorl.thumbnail.fields import ImageWithThumbnailsField
 class Country(NamedModel, AuditableModel):
     """ Country Model """
 
+    class Meta:
+        verbose_name = _(u'Pais')
+        verbose_name_plural = _(u'Paises')
+
 
 class Province(NamedModel, AuditableModel):
     """ Province Model """
     country = models.ForeignKey(Country)
+
+    class Meta:
+        verbose_name = _(u'Provincia')
+        verbose_name_plural = _(u'Provincias')
 
 
 class Auditorium(NamedModel, AuditableModel):
@@ -27,11 +36,19 @@ class Auditorium(NamedModel, AuditableModel):
     description = models.TextField()
     address = models.TextField()
 
+    class Meta:
+        verbose_name = _(u'Auditorio')
+        verbose_name_plural = _(u'Auditorios')
+
 
  # Event Models
 
 class Category(NamedModel, AuditableModel):
     """ Category Model """
+
+    class Meta:
+        verbose_name = _(u'Categoria')
+        verbose_name_plural = _(u'Categorias')
 
 
 class Artist(NamedModel, AuditableModel):
@@ -47,6 +64,10 @@ class Artist(NamedModel, AuditableModel):
             },
         null=True, blank=True
         )
+
+    class Meta:
+        verbose_name = _(u'Artista')
+        verbose_name_plural = _(u'Artistas')
 
 
 class Event(NamedModel, AuditableModel):
@@ -68,12 +89,20 @@ class Event(NamedModel, AuditableModel):
         null=True, blank=True
         )
 
+    class Meta:
+        verbose_name = _(u'Evento')
+        verbose_name_plural = _(u'Eventos')
+
 
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """
     event = models.ForeignKey(Event)
     price = models.FloatField()
     quantity = models.PositiveIntegerField()
+
+    class Meta:
+        verbose_name = _(u'Zona')
+        verbose_name_plural = _(u'Zonas')
 
 
 class Seller(NamedModel, AuditableModel):
@@ -83,12 +112,20 @@ class Seller(NamedModel, AuditableModel):
     country = models.ForeignKey(Country)
     address = models.TextField()
 
+    class Meta:
+        verbose_name = _(u'Vendedor')
+        verbose_name_plural = _(u'Vendedores')
+
 
 class Buyer(NamedModel, AuditableModel):
     user = models.OneToOneField(User)
     province = models.ForeignKey(Province)
     country = models.ForeignKey(Country)
     address = models.TextField()
+
+    class Meta:
+        verbose_name = _(u'Comprador')
+        verbose_name_plural = _(u'Compradores')
 
 
 class Ticket(NamedModel, AuditableModel):
@@ -110,8 +147,8 @@ class Ticket(NamedModel, AuditableModel):
             )
     sell_by = models.ForeignKey(Seller, null=True, blank=True)
     bought_by = models.OneToOneField(Buyer, null=True, blank=True)
-  
-
-
-
+ 
+    class Meta:
+        verbose_name = _(u'Ticket')
+        verbose_name_plural = _(u'Tickets')
 
