@@ -4,6 +4,5 @@ sessions
 sites
 admin
 south
-django_extensions
 cart
 ticket
