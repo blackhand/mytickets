@@ -1,0 +1,378 @@
+[
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 12:38:41", 
+            "object_repr": "Michael Jackson 2009", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 12:38:14", 
+            "object_repr": "Oasis en Lima", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 12:37:48", 
+            "object_repr": "Jockey del Peru", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 12:18:35", 
+            "object_repr": "Oasis", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 12:17:53", 
+            "object_repr": "Michael Jackson", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:55:39", 
+            "object_repr": "2009 Sticky & Sweet Tour", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:53:30", 
+            "object_repr": "Estadio Nacional", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:53:01", 
+            "object_repr": "Lima", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:52:48", 
+            "object_repr": "Peru", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:43:02", 
+            "object_repr": "Madonna", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:33:34", 
+            "object_repr": "Honduras", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-05-13 11:33:03", 
+            "object_repr": "Costa Rica", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2009-05-23 10:22:44", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6936a$ec59a85e49dd5f0a11ff42cee9b159377f1a798f", 
+            "email": "admin@site.net", 
+            "date_joined": "2009-05-13 11:26:27"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2009-05-13 16:26:37", 
+            "app_name": "ticket", 
+            "migration": "0001_initial"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2009-05-13 16:26:37", 
+            "app_name": "ticket", 
+            "migration": "0002_clean_event"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2009-05-14 14:12:15", 
+            "app_name": "ticket", 
+            "migration": "0003_add_buyer"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2009-05-14 14:52:30", 
+            "app_name": "ticket", 
+            "migration": "0004_add_images_to_event_and_artist"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "ticket.country", 
+        "fields": {
+            "created_at": "2009-05-13 11:33:03", 
+            "is_deleted": false, 
+            "updated_at": "2009-05-13 11:33:03", 
+            "name": "Costa Rica"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.country", 
+        "fields": {
+            "created_at": "2009-05-13 11:33:34", 
+            "is_deleted": false, 
+            "updated_at": "2009-05-13 11:33:34", 
+            "name": "Honduras"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "ticket.country", 
+        "fields": {
+            "created_at": "2009-05-13 11:52:48", 
+            "is_deleted": false, 
+            "updated_at": "2009-05-13 11:52:48", 
+            "name": "Peru"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.province", 
+        "fields": {
+            "country": 3, 
+            "created_at": "2009-05-13 11:53:01", 
+            "is_deleted": false, 
+            "updated_at": "2009-05-13 11:53:01", 
+            "name": "Lima"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.auditorium", 
+        "fields": {
+            "province": 1, 
+            "is_deleted": false, 
+            "name": "Estadio Nacional", 
+            "country": 3, 
+            "created_at": "2009-05-13 11:53:30", 
+            "is_active": true, 
+            "updated_at": "2009-05-13 11:53:30", 
+            "address": "asdnasdansld", 
+            "description": "adsasdada"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.auditorium", 
+        "fields": {
+            "province": 1, 
+            "is_deleted": false, 
+            "name": "Jockey del Peru", 
+            "country": 3, 
+            "created_at": "2009-05-13 12:37:48", 
+            "is_active": true, 
+            "updated_at": "2009-05-13 12:37:48", 
+            "address": "asdasdasd", 
+            "description": "asdasdasdasdas"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.artist", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Madonna", 
+            "image": "", 
+            "updated_at": "2009-05-13 11:43:02", 
+            "created_at": "2009-05-13 11:43:02", 
+            "biography": "Nacio en Detroit el 16 de agosto de 1958"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.artist", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Michael Jackson", 
+            "image": "", 
+            "updated_at": "2009-05-13 12:17:53", 
+            "created_at": "2009-05-13 12:17:53", 
+            "biography": "asdasda"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "ticket.artist", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Oasis", 
+            "image": "", 
+            "updated_at": "2009-05-13 12:18:35", 
+            "created_at": "2009-05-13 12:18:35", 
+            "biography": "adssad"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.event", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "2009 Sticky & Sweet Tour", 
+            "end_date": "2009-05-31", 
+            "artist": 1, 
+            "created_at": "2009-05-13 11:55:39", 
+            "description": "The opening night of Madonna's 2009 Sticky & Sweet Tour is just 11 weeks away, and you can count on Icon and Madonna.com to keep you entertained until then\u2026", 
+            "is_active": true, 
+            "updated_at": "2009-05-13 11:55:39", 
+            "image": "", 
+            "start_date": "2009-05-13", 
+            "auditorium": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.event", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Oasis en Lima", 
+            "end_date": "2009-05-31", 
+            "artist": 3, 
+            "created_at": "2009-05-13 12:38:14", 
+            "description": "asdasda", 
+            "is_active": true, 
+            "updated_at": "2009-05-13 12:38:14", 
+            "image": "", 
+            "start_date": "2009-05-13", 
+            "auditorium": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "ticket.event", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Michael Jackson 2009", 
+            "end_date": "2009-05-31", 
+            "artist": 2, 
+            "created_at": "2009-05-13 12:38:41", 
+            "description": "asdadasd", 
+            "is_active": true, 
+            "updated_at": "2009-05-13 12:38:41", 
+            "image": "", 
+            "start_date": "2009-05-13", 
+            "auditorium": 1
+        }
+    }
+]
