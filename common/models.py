@@ -23,7 +23,6 @@ class AuditableManager(models.Manager):
         """
         return super(AuditableManager, self).get_query_set().filter(is_deleted=True)
 
-   
 
 class AuditableModel(models.Model):
     created_at = models.DateTimeField(

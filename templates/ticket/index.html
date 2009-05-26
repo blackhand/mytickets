@@ -1,8 +1,9 @@
+{% spaceless %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
     <title>{% block title %}MaccTicket{% endblock %}</title>
 </head>
 
@@ -15,14 +16,17 @@
           <tr>
            <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="660">
               <tr>
-               <td><img name="Cabecera_r1_c1" src="Imagenes/Cabecera_r1_c1.jpg" width="660" height="69" border="0" id="Cabecera_r1_c1" alt="" /></td>
+               <td><img name="Cabecera_r1_c1" src="/static/Imagenes/Cabecera_r1_c1.jpg" width="660" height="69" border="0" id="Cabecera_r1_c1" alt="" /></td>
               </tr>
               <tr>
                <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="660">
                   <tr>
-                   <td><img name="Cabecera_r4_c1" src="Imagenes/Cabecera_r4_c1.jpg" width="157" height="37" border="0" id="Cabecera_r4_c1" alt="" /></td>
-                   <td><img name="Cabecera_r4_c2" src="Imagenes/Cabecera_r4_c2.jpg" width="102" height="37" border="0" id="Cabecera_r4_c2" alt="" /></td>
-                   <td><img name="Cabecera_r4_c3" src="Imagenes/Cabecera_r4_c3.jpg" width="401" height="37" border="0" id="Cabecera_r4_c3" alt="" /></td>
+                   <td><img name="Cabecera_r4_c1" src="/static/Imagenes/Cabecera_r4_c1.jpg" width="157" height="37" border="0" id="Cabecera_r4_c1" alt="" /></td>
+                   <td><a href='{% url homepage %}'>
+                           <img name="Cabecera_r4_c2" src="/static/Imagenes/Cabecera_r4_c2.jpg" width="102" height="37" border="0" id="Cabecera_r4_c2" alt="" />
+                       </a>
+                   </td>
+                   <td><img name="Cabecera_r4_c3" src="/static/Imagenes/Cabecera_r4_c3.jpg" width="401" height="37" border="0" id="Cabecera_r4_c3" alt="" /></td>
                   </tr>
                 </table></td>
               </tr>
@@ -31,25 +35,25 @@
               <tr>
                <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="329">
                   <tr>
-                   <td><img name="Cabecera_r1_c4" src="Imagenes/Cabecera_r1_c4.jpg" width="147" height="21" border="0" id="Cabecera_r1_c4" alt="" /></td>
-                   <td><img name="Cabecera_r1_c5" src="Imagenes/Cabecera_r1_c5.jpg" width="182" height="21" border="0" id="Cabecera_r1_c5" alt="" /></td>
+                   <td><img name="Cabecera_r1_c4" src="/static/Imagenes/Cabecera_r1_c4.jpg" width="147" height="21" border="0" id="Cabecera_r1_c4" alt="" /></td>
+                   <td><img name="Cabecera_r1_c5" src="/static/Imagenes/Cabecera_r1_c5.jpg" width="182" height="21" border="0" id="Cabecera_r1_c5" alt="" /></td>
                   </tr>
                 </table></td>
               </tr>
               <tr>
-               <td><img name="Cabecera_r2_c4" src="Imagenes/Cabecera_r2_c4.jpg" width="329" height="22" border="0" id="Cabecera_r2_c4" alt="" /></td>
+               <td><img name="Cabecera_r2_c4" src="/static/Imagenes/Cabecera_r2_c4.jpg" width="329" height="22" border="0" id="Cabecera_r2_c4" alt="" /></td>
               </tr>
               <tr>
-               <td><img name="Cabecera_r3_c4" src="Imagenes/Cabecera_r3_c4.jpg" width="329" height="26" border="0" id="Cabecera_r3_c4" alt="" /></td>
+               <td><img name="Cabecera_r3_c4" src="/static/Imagenes/Cabecera_r3_c4.jpg" width="329" height="26" border="0" id="Cabecera_r3_c4" alt="" /></td>
               </tr>
               <tr>
-               <td><img name="Cabecera_r4_c4" src="Imagenes/Cabecera_r4_c4.jpg" width="329" height="19" border="0" id="Cabecera_r4_c4" alt="" /></td>
+               <td><img name="Cabecera_r4_c4" src="/static/Imagenes/Cabecera_r4_c4.jpg" width="329" height="19" border="0" id="Cabecera_r4_c4" alt="" /></td>
               </tr>
               <tr>
-               <td><img name="Cabecera_r5_c4" src="Imagenes/Cabecera_r5_c4.jpg" width="329" height="18" border="0" id="Cabecera_r5_c4" alt="" /></td>
+               <td><img name="Cabecera_r5_c4" src="/static/Imagenes/Cabecera_r5_c4.jpg" width="329" height="18" border="0" id="Cabecera_r5_c4" alt="" /></td>
               </tr>
             </table></td>
-           <td><img name="Cabecera_r1_c6" src="Imagenes/Cabecera_r1_c6.jpg" width="21" height="106" border="0" id="Cabecera_r1_c6" alt="" /></td>
+           <td><img name="Cabecera_r1_c6" src="/static/Imagenes/Cabecera_r1_c6.jpg" width="21" height="106" border="0" id="Cabecera_r1_c6" alt="" /></td>
           </tr>
         </table>
           </div>
@@ -75,3 +79,4 @@
     
 </body>
 </html>
+{% endspaceless %}

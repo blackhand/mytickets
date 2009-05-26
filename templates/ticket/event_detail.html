@@ -1,0 +1,10 @@
+{% extends "ticket/index.html" %}
+{% block title %}Evento {{ event.name }}{% endblock %}
+{% block content %}
+<img src='{{ event.image.thumbnail }}'/>
+<h2>{{event.artist }}, {{ event.name }}</h2>
+{{ event.description }}<br /><br />
+Auditorio: {{ event.auditorium }}<br />
+Fechas: del {{ event.start_date }} al {{ event.end_date }}<br /><br />
+{% endblock %}
+

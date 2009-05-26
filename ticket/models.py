@@ -93,6 +93,14 @@ class Event(NamedModel, AuditableModel):
         verbose_name = _(u'Evento')
         verbose_name_plural = _(u'Eventos')
 
+    @models.permalink
+    def get_absolute_url(self):
+        """
+        URL for Events
+        """
+        return ('event_detail', [str(self.id)])
+
+
 
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """
