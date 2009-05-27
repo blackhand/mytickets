@@ -101,7 +101,6 @@ class Event(NamedModel, AuditableModel):
         return ('event_detail', [str(self.id)])
 
 
-
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """
     event = models.ForeignKey(Event)

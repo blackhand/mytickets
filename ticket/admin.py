@@ -2,23 +2,33 @@ from django.contrib import admin
 from models import Event, Ticket, Auditorium, Province, Country, Artist
 
 
+class ZoneAdmin(admin.StackedInline):
+    pass
+
+
 class ProvinceAdmin(admin.ModelAdmin):
     pass
+
 
 class CountryAdmin(admin.ModelAdmin):
     pass
 
+
 class AuditoriumAdmin(admin.ModelAdmin):
     pass
+
 
 class EventAdmin(admin.ModelAdmin):
     pass
 
+
 class TicketAdmin(admin.ModelAdmin):
     pass
 
+
 class ArtistAdmin(admin.ModelAdmin):
     pass
+
 
 admin.site.register(Province, ProvinceAdmin)
 admin.site.register(Country, CountryAdmin)
