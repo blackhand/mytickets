@@ -42,6 +42,10 @@ class Auditorium(NamedModel, AuditableModel):
 
 
  # Event Models
+class CategoryManager(models.Manager):
+    def with_ads(self):
+        return self.exclude(event=None)
+
 
 class Category(NamedModel, AuditableModel):
     """ Category Model """
@@ -49,6 +53,8 @@ class Category(NamedModel, AuditableModel):
     class Meta:
         verbose_name = _(u'Categoria')
         verbose_name_plural = _(u'Categorias')
+
+    objects = CategoryManager()
 
 
 class Artist(NamedModel, AuditableModel):

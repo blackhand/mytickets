@@ -7,19 +7,20 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Example:
-    # (r'^mytickets/', include('mytickets.foo.urls')),
-
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'ticket.views.homepage', name='homepage'),
-    url(r'^event/(?P<event_id>\w+)/$', 'ticket.views.event_detail', name='event_detail'),
-)
+    )
 
+# mytickets app urls
+urlpatterns += patterns('ticket.views',
+    url(r'^$', 'homepage', name='homepage'),
+    url(r'^(?P<category>\w+)/$', 'event_list', name='event_list'),
+    url(r'^event/(?P<event_id>\w+)/$', 'event_detail', name='event_detail'),
+    )
+
+# static files in DEBUG mode
 if settings.DEBUG:
     urlpatterns += patterns('',
             (r'^static/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),

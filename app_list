@@ -1,8 +1,5 @@
 auth
-contenttypes
-sessions
 sites
 admin
-south
 cart
 ticket

@@ -1,3 +1,4 @@
+{% spaceless %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
@@ -41,7 +42,9 @@
 			<!-- contenido interno -->
             	<div id="linkList">
                     <div id="tableMenu">
-                        {% block sidebar %}{% endblock %}
+                        {% block sidebar %}
+                            {% include "ticket/_category_sidebar.html" %}
+                        {% endblock %}
                     </div>
                     <div id="tableTop5">
                         {% block topmenu %}{% endblock %}
@@ -71,3 +74,4 @@
 
 </body>
 </html>
+{% endspaceless %}

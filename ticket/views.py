@@ -11,12 +11,18 @@ def homepage(request):
     return event_list(request)
 
 def event_list(request,
+               category=None,
                country=None,
                province=None,
                auditorium=None
         ):
+    """
+    this view provide a full event list, filtered based
+    """
 
     queryset = Event.objects.all()
+    if category is not None:
+        queryset = queryset.filter(category__name=category)
     extra_context = {}
 
     return object_list(request,
@@ -25,6 +31,9 @@ def event_list(request,
 
 
 def event_detail(request, event_id):
+    """
+    this view manage the detail for and event
+    """
     queryset = Event.objects.all()
     extra_context = {}
     return object_detail(request,
@@ -33,8 +42,10 @@ def event_detail(request, event_id):
             template_object_name = 'event',
             extra_context = extra_context)
 
+
 def buy_ticket(request):
     return HttpResponse('buy_ticket')
+
 
 def buy_sucess(request):
     return HttpResponse('buy_sucess')
