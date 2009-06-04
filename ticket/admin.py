@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Event, Ticket, Auditorium, Province, Country, Artist, Zone
+from models import Category, Event, Ticket, Auditorium, Province, Country, Artist, Zone
 
 
 class ZoneInline(admin.StackedInline):
@@ -15,6 +15,10 @@ class CountryAdmin(admin.ModelAdmin):
 
 
 class AuditoriumAdmin(admin.ModelAdmin):
+    pass
+
+
+class CategoryAdmin(admin.ModelAdmin):
     pass
 
 
@@ -35,6 +39,7 @@ class ArtistAdmin(admin.ModelAdmin):
 admin.site.register(Province, ProvinceAdmin)
 admin.site.register(Country, CountryAdmin)
 admin.site.register(Auditorium, AuditoriumAdmin)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(Event, EventAdmin)
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Ticket, TicketAdmin)

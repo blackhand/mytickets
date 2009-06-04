@@ -72,6 +72,7 @@ class Artist(NamedModel, AuditableModel):
 
 class Event(NamedModel, AuditableModel):
     """ Event Model """
+    category = models.ForeignKey(Category, null=True)
     artist = models.ForeignKey(Artist)
     auditorium = models.ForeignKey(Auditorium)
     is_active = models.BooleanField(default=True)
