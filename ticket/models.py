@@ -112,27 +112,11 @@ class Zone(NamedModel, AuditableModel):
         verbose_name_plural = _(u'Zonas')
 
 
-class Seller(NamedModel, AuditableModel):
-    """ Seller (POS) Model """
-    user = models.OneToOneField(User)
+class Profile(NamedModel, AuditableModel):
+    user = models.ForeignKey(User, unique=True)
     province = models.ForeignKey(Province)
     country = models.ForeignKey(Country)
     address = models.TextField()
-
-    class Meta:
-        verbose_name = _(u'Vendedor')
-        verbose_name_plural = _(u'Vendedores')
-
-
-class Buyer(NamedModel, AuditableModel):
-    user = models.OneToOneField(User)
-    province = models.ForeignKey(Province)
-    country = models.ForeignKey(Country)
-    address = models.TextField()
-
-    class Meta:
-        verbose_name = _(u'Comprador')
-        verbose_name_plural = _(u'Compradores')
 
 
 class Ticket(NamedModel, AuditableModel):
@@ -152,8 +136,8 @@ class Ticket(NamedModel, AuditableModel):
     zone = models.ForeignKey(Zone,
             limit_choices_to = {'event__exact': event}
             )
-    sell_by = models.ForeignKey(Seller, null=True, blank=True)
-    bought_by = models.OneToOneField(Buyer, null=True, blank=True)
+    sell_by = models.ForeignKey(User, null=True, blank=True, related_name='sell_ticket_set')
+    bought_by = models.OneToOneField(User, null=True, blank=True, related_name='buy_ticket_set')
  
     class Meta:
         verbose_name = _(u'Ticket')

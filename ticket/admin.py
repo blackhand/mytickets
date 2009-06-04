@@ -1,9 +1,9 @@
 from django.contrib import admin
-from models import Event, Ticket, Auditorium, Province, Country, Artist
+from models import Event, Ticket, Auditorium, Province, Country, Artist, Zone
 
 
-class ZoneAdmin(admin.StackedInline):
-    pass
+class ZoneInline(admin.StackedInline):
+    model = Zone 
 
 
 class ProvinceAdmin(admin.ModelAdmin):
@@ -19,7 +19,9 @@ class AuditoriumAdmin(admin.ModelAdmin):
 
 
 class EventAdmin(admin.ModelAdmin):
-    pass
+    inlines = [
+            ZoneInline,
+            ]
 
 
 class TicketAdmin(admin.ModelAdmin):
