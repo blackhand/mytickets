@@ -133,7 +133,7 @@ acronym {
 }
 
 .separador {
-	margin: 230px 0 0 290px;
+	margin: 204px 0 0 290px;
 	}
 
 #tableMenu {
@@ -144,13 +144,16 @@ acronym {
 	background-color: #D7D7D7;
 	position: absolute;
 	left: 42px;
-	top: 132px;
+	top: 148px;
 	height: 308px;
 	background-color: #fff;
 	}
 	
 #tableTop5 {
-	border: 1px solid #8E8E8E;
+	border-top: 1px solid #8E8E8E;
+	border-left: 1px solid #8E8E8E;
+	border-right: 2px solid #8E8E8E;
+	border-bottom: 2px solid #8E8E8E;
 	width:620px;
 	margin: 0;
 	padding:0;
@@ -164,12 +167,12 @@ acronym {
 	
 #tableNovedades {
 	border-left: 1px solid #8E8E8E;
-	border-right: 1px solid #8E8E8E;
+	border-right: 2px solid #8E8E8E;
 	border-top: 3px solid #A80405;
 	border-bottom: 3px solid #A80405;
-	width:620px;
+	width:600px;
 	margin: 0;
-	padding:0;
+	padding:5px 10px 5px 10px;
 	background-color: #D7D7D7;
 	position: absolute;
 	top: 384px;
