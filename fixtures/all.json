@@ -1,5 +1,701 @@
 [
     {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_cart", 
+            "name": "Can add cart", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_item", 
+            "name": "Can add item", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_cart", 
+            "name": "Can change cart", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_item", 
+            "name": "Can change item", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_cart", 
+            "name": "Can delete cart", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_item", 
+            "name": "Can delete item", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_migrationhistory", 
+            "name": "Can add migration history", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_migrationhistory", 
+            "name": "Can change migration history", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_migrationhistory", 
+            "name": "Can delete migration history", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_artist", 
+            "name": "Can add Artista", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_auditorium", 
+            "name": "Can add Auditorio", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_category", 
+            "name": "Can add Categoria", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_country", 
+            "name": "Can add Pais", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_event", 
+            "name": "Can add Evento", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_profile", 
+            "name": "Can add profile", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_province", 
+            "name": "Can add Provincia", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_ticket", 
+            "name": "Can add Ticket", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_zone", 
+            "name": "Can add Zona", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_artist", 
+            "name": "Can change Artista", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_auditorium", 
+            "name": "Can change Auditorio", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_category", 
+            "name": "Can change Categoria", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_country", 
+            "name": "Can change Pais", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_event", 
+            "name": "Can change Evento", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_profile", 
+            "name": "Can change profile", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_province", 
+            "name": "Can change Provincia", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_ticket", 
+            "name": "Can change Ticket", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_zone", 
+            "name": "Can change Zona", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_artist", 
+            "name": "Can delete Artista", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_auditorium", 
+            "name": "Can delete Auditorio", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_category", 
+            "name": "Can delete Categoria", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_country", 
+            "name": "Can delete Pais", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_event", 
+            "name": "Can delete Evento", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_profile", 
+            "name": "Can delete profile", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_province", 
+            "name": "Can delete Provincia", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_ticket", 
+            "name": "Can delete Ticket", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_zone", 
+            "name": "Can delete Zona", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2009-06-04 14:32:59", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6936a$ec59a85e49dd5f0a11ff42cee9b159377f1a798f", 
+            "email": "admin@site.net", 
+            "date_joined": "2009-05-13 11:26:27"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-06-04 17:11:48", 
+            "object_repr": "Tour Death Magnetic", 
+            "object_id": "4", 
+            "change_message": "Modificado/a name.", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 16:34:18", 
+            "object_repr": "Death Magnetic 2009", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 16:33:38", 
+            "object_repr": "Metallica", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-06-04 16:32:42", 
+            "object_repr": "2009 Sticky & Sweet Tour", 
+            "object_id": "1", 
+            "change_message": "Modificado/a category.", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-06-04 16:32:33", 
+            "object_repr": "Michael Jackson 2009", 
+            "object_id": "3", 
+            "change_message": "Modificado/a category.", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 16:32:27", 
+            "object_repr": "PopRock", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2009-06-04 16:32:04", 
+            "object_repr": "Oasis en Lima", 
+            "object_id": "2", 
+            "change_message": "Modificado/a category.", 
+            "user": 1, 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 15:48:48", 
+            "object_repr": "Metal", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 15:48:39", 
+            "object_repr": "Electronica", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2009-06-04 15:48:33", 
+            "object_repr": "Rock", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 15
+        }
+    }, 
+    {
         "pk": 12, 
         "model": "admin.logentry", 
         "fields": {
@@ -154,69 +850,7 @@
             "user": 1, 
             "content_type": 10
         }
-    },
-    {
-        "pk": 1, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "admin", 
-            "first_name": "", 
-            "last_name": "", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2009-05-23 10:22:44", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$6936a$ec59a85e49dd5f0a11ff42cee9b159377f1a798f", 
-            "email": "admin@site.net", 
-            "date_joined": "2009-05-13 11:26:27"
-        }
-    },
-    {
-        "pk": 1, 
-        "model": "sites.site", 
-        "fields": {
-            "domain": "example.com", 
-            "name": "example.com"
-        }
-    },
-    {
-        "pk": 1, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2009-05-13 16:26:37", 
-            "app_name": "ticket", 
-            "migration": "0001_initial"
-        }
     }, 
-    {
-        "pk": 2, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2009-05-13 16:26:37", 
-            "app_name": "ticket", 
-            "migration": "0002_clean_event"
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2009-05-14 14:12:15", 
-            "app_name": "ticket", 
-            "migration": "0003_add_buyer"
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2009-05-14 14:52:30", 
-            "app_name": "ticket", 
-            "migration": "0004_add_images_to_event_and_artist"
-        }
-    },
     {
         "pk": 1, 
         "model": "ticket.country", 
@@ -290,13 +924,53 @@
     }, 
     {
         "pk": 1, 
+        "model": "ticket.category", 
+        "fields": {
+            "created_at": "2009-06-04 15:48:33", 
+            "is_deleted": false, 
+            "updated_at": "2009-06-04 15:48:33", 
+            "name": "Rock"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.category", 
+        "fields": {
+            "created_at": "2009-06-04 15:48:39", 
+            "is_deleted": false, 
+            "updated_at": "2009-06-04 15:48:39", 
+            "name": "Electronica"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "ticket.category", 
+        "fields": {
+            "created_at": "2009-06-04 15:48:48", 
+            "is_deleted": false, 
+            "updated_at": "2009-06-04 15:48:48", 
+            "name": "Metal"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "ticket.category", 
+        "fields": {
+            "created_at": "2009-06-04 16:32:27", 
+            "is_deleted": false, 
+            "updated_at": "2009-06-04 16:32:27", 
+            "name": "PopRock"
+        }
+    }, 
+    {
+        "pk": 1, 
         "model": "ticket.artist", 
         "fields": {
             "is_deleted": false, 
             "name": "Madonna", 
-            "image": "", 
-            "updated_at": "2009-05-13 11:43:02", 
             "created_at": "2009-05-13 11:43:02", 
+            "updated_at": "2009-05-13 11:43:02", 
+            "image": "", 
             "biography": "Nacio en Detroit el 16 de agosto de 1958"
         }
     }, 
@@ -306,9 +980,9 @@
         "fields": {
             "is_deleted": false, 
             "name": "Michael Jackson", 
-            "image": "", 
-            "updated_at": "2009-05-13 12:17:53", 
             "created_at": "2009-05-13 12:17:53", 
+            "updated_at": "2009-05-13 12:17:53", 
+            "image": "", 
             "biography": "asdasda"
         }
     }, 
@@ -318,33 +992,29 @@
         "fields": {
             "is_deleted": false, 
             "name": "Oasis", 
-            "image": "", 
-            "updated_at": "2009-05-13 12:18:35", 
             "created_at": "2009-05-13 12:18:35", 
+            "updated_at": "2009-05-13 12:18:35", 
+            "image": "", 
             "biography": "adssad"
         }
     }, 
     {
-        "pk": 1, 
-        "model": "ticket.event", 
+        "pk": 4, 
+        "model": "ticket.artist", 
         "fields": {
             "is_deleted": false, 
-            "name": "2009 Sticky & Sweet Tour", 
-            "end_date": "2009-05-31", 
-            "artist": 1, 
-            "created_at": "2009-05-13 11:55:39", 
-            "description": "The opening night of Madonna's 2009 Sticky & Sweet Tour is just 11 weeks away, and you can count on Icon and Madonna.com to keep you entertained until then\u2026", 
-            "is_active": true, 
-            "updated_at": "2009-05-13 11:55:39", 
+            "name": "Metallica", 
+            "created_at": "2009-06-04 16:33:38", 
+            "updated_at": "2009-06-04 16:33:38", 
             "image": "", 
-            "start_date": "2009-05-13", 
-            "auditorium": 1
+            "biography": "Metallica es una de las grandes bandas de Metal a nivel mundial"
         }
     }, 
     {
         "pk": 2, 
         "model": "ticket.event", 
         "fields": {
+            "category": 1, 
             "is_deleted": false, 
             "name": "Oasis en Lima", 
             "end_date": "2009-05-31", 
@@ -352,7 +1022,7 @@
             "created_at": "2009-05-13 12:38:14", 
             "description": "asdasda", 
             "is_active": true, 
-            "updated_at": "2009-05-13 12:38:14", 
+            "updated_at": "2009-06-04 16:32:04", 
             "image": "", 
             "start_date": "2009-05-13", 
             "auditorium": 2
@@ -362,6 +1032,7 @@
         "pk": 3, 
         "model": "ticket.event", 
         "fields": {
+            "category": 4, 
             "is_deleted": false, 
             "name": "Michael Jackson 2009", 
             "end_date": "2009-05-31", 
@@ -369,9 +1040,45 @@
             "created_at": "2009-05-13 12:38:41", 
             "description": "asdadasd", 
             "is_active": true, 
-            "updated_at": "2009-05-13 12:38:41", 
+            "updated_at": "2009-06-04 16:32:33", 
             "image": "", 
             "start_date": "2009-05-13", 
+            "auditorium": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.event", 
+        "fields": {
+            "category": 4, 
+            "is_deleted": false, 
+            "name": "2009 Sticky & Sweet Tour", 
+            "end_date": "2009-05-31", 
+            "artist": 1, 
+            "created_at": "2009-05-13 11:55:39", 
+            "description": "The opening night of Madonna's 2009 Sticky & Sweet Tour is just 11 weeks away, and you can count on Icon and Madonna.com to keep you entertained until then\u2026", 
+            "is_active": true, 
+            "updated_at": "2009-06-04 16:32:42", 
+            "image": "", 
+            "start_date": "2009-05-13", 
+            "auditorium": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "ticket.event", 
+        "fields": {
+            "category": 3, 
+            "is_deleted": false, 
+            "name": "Tour Death Magnetic", 
+            "end_date": "2009-09-24", 
+            "artist": 4, 
+            "created_at": "2009-06-04 16:34:18", 
+            "description": "Metallica en su tour de promocion de su nuevo album Death Magnetic", 
+            "is_active": true, 
+            "updated_at": "2009-06-04 17:11:48", 
+            "image": "", 
+            "start_date": "2009-09-24", 
             "auditorium": 1
         }
     }
