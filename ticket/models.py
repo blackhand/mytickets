@@ -34,6 +34,16 @@ class Auditorium(NamedModel, AuditableModel):
     province = models.ForeignKey(Province)
     is_active = models.BooleanField(default=True)
     description = models.TextField()
+    image = ImageWithThumbnailsField(
+        upload_to='auditorium_images',
+        thumbnail={'size': (200, 200)},
+        extra_thumbnails={
+            'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
+            'small': {'size': (100, 100)},
+            'large': {'size': (400, 400)},
+            },
+        null=True, blank=True
+        )
     address = models.TextField()
 
     class Meta:
@@ -82,6 +92,7 @@ class Event(NamedModel, AuditableModel):
     artist = models.ForeignKey(Artist)
     auditorium = models.ForeignKey(Auditorium)
     is_active = models.BooleanField(default=True)
+    is_prominent = models.BooleanField(default=False)
     description = models.TextField()
     start_date = models.DateField()
     end_date = models.DateField()
