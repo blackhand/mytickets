@@ -1,0 +1,12 @@
+<div id="slideshow" class="pics">
+    {% for image in image_links %}
+    <img src="{{ image }}" width="200" height="200"/>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+     	$('#slideshow').cycle({fx:'fade',speed: 300});
+     });
+</script>
+

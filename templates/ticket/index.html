@@ -9,9 +9,9 @@
     <meta name="robots" content="all" />
     <title>{% block title %}{% endblock %}</title>
 	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
-	<script type="text/javascript"></script>
-	
-	<style type="text/css" media="all">
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.cycle.js"></script>
+    <style type="text/css" media="all">
 		@import "/static/sample.css";
 	</style>
 	
@@ -41,13 +41,16 @@
 			<!-- contenido interno -->
             	<div id="linkList">
                     <img src="/static/tit-menu.png" alt="" />
-		    <div id="tableMenu">
+        		    <div id="tableMenu">
                         {% block sidebar %}
                             {% include "ticket/_category_sidebar.html" %}
-			{% endblock %}
+            			{% endblock %}
                     </div>
                     <div id="tableTop5">
-                        {% block topmenu %}{% endblock %}
+                       {% load events_top %}
+                        {% block topmenu %}
+                            {% image_cycle_show %}
+                        {% endblock %}
                     </div>
                     <img src="/static/separador.png" class="separador" />
                     <div id="tableNovedades">

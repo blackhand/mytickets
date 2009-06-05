@@ -98,10 +98,11 @@ class Event(NamedModel, AuditableModel):
     end_date = models.DateField()
     image = ImageWithThumbnailsField(
         upload_to='event_images',
-        thumbnail={'size': (200, 200)},
+        thumbnail={'size': (300, 300)},
         extra_thumbnails={
             'icon': {'size': (16, 16), 'options': ['crop', 'upscale']},
             'small': {'size': (100, 100)},
+            'medium': {'size': (200, 200)},
             'large': {'size': (400, 400)},
             },
         null=True, blank=True

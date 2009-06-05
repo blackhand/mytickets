@@ -4,7 +4,6 @@
 <ul>
 {% for event in object_list %}
 <li>
-<img src='{{ event.image.thumbnail }}'/>
 <a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a><br /><br />
 {{ event.description }}<br /><br />
 {% comment %}
