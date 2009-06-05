@@ -6,6 +6,9 @@ from django.views.static import serve
 from django.contrib import admin
 admin.autodiscover()
 
+# fix for bug in django admin urls in Django 1.1 beta
+admin.site.root_path = '/admin/'
+
 urlpatterns = patterns('',
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
