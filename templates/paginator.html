@@ -1,0 +1,17 @@
+{% spaceless %}
+<div id="pagenavigation">
+<span class="paginate-pages" title="Page Jump">{{ pages }} Páginas </span>
+{% if show_first %}<span class="paginate-first"><a href="?{{querystring}}page=1" title="Primera Página">&laquo; Primera</a></span> | {% endif %}
+{% if has_previous %}<span class="paginate-previous"><a href="?{{querystring}}page={{ previous }}" title="Página Anterior">&lt; Anterior</a></span> | {% endif %}
+{% for num in page_numbers %}
+{% ifequal num page %}
+  <span class="current" title="Current Page" name="Page {{num}}">{{ num }}</span>
+{% else %}
+  <span class="paginate-link"><a href="?{{querystring}}page={{ num }}" title="Página {{ num }}">{{ num }}</a></span>
+{% endifequal %}{% if not forloop.last %} - {% endif %}
+{% endfor %}
+{% if has_next %} | <span class="paginate-next"><a href="?{{querystring}}page={{ next }}" title="Siguiente Página">Siguiente &gt;</a></span>{% endif %}
+{% if show_last %} | <span class="paginate-last"><a href="?{{querystring}}page={{ pages }}" title="Última Página">Ultima &raquo;</a></span>{% endif %}
+</div>
+{% endspaceless %}
+
