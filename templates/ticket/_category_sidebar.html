@@ -2,4 +2,6 @@
     {% for category in categories %}
     <li><a href='{% url event_list category %}'>{{ category }}</a></li>
     {% endfor %}
+    <br />
+    <li><a href='{% url homepage %}'>Todos</a></li>
 </ul>
