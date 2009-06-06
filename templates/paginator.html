@@ -1,6 +1,8 @@
 {% spaceless %}
 <div id="pagenavigation">
+{% comment %}
 <span class="paginate-pages" title="Page Jump">{{ pages }} Páginas </span>
+{% endcomment %}
 {% if show_first %}<span class="paginate-first"><a href="?{{querystring}}page=1" title="Primera Página">&laquo; Primera</a></span> | {% endif %}
 {% if has_previous %}<span class="paginate-previous"><a href="?{{querystring}}page={{ previous }}" title="Página Anterior">&lt; Anterior</a></span> | {% endif %}
 {% for num in page_numbers %}
