@@ -10,7 +10,7 @@
 {{ event.description }}<br /><br />
 </li>
 {% endfor %}
-{% paginator %}
+{% if is_paginated %}{% paginator %}{% endif %}
 </ul>
 {% endblock %}
 
