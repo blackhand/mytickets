@@ -9,8 +9,8 @@
 <a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a><br /><br />
 {{ event.description }}<br /><br />
 </li>
-{% paginator %}
 {% endfor %}
+{% paginator %}
 </ul>
 {% endblock %}
 
