@@ -1,3 +1,5 @@
 # -*- coding: UTF-8 -*-
 
 MAX_CYCLE_IMAGES = 5
+
+MAX_EVENTS_PER_PAGE = 3

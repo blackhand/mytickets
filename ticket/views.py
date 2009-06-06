@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.views.generic.list_detail import object_list, object_detail
 
 from ticket.models import Event
+from ticket.constants import MAX_EVENTS_PER_PAGE
 
 def homepage(request):
     return event_list(request)
@@ -26,8 +27,9 @@ def event_list(request,
     extra_context = {}
 
     return object_list(request,
-            queryset = queryset,
-            extra_context = extra_context)
+            queryset=queryset,
+            paginate_by=MAX_EVENTS_PER_PAGE,
+            extra_context=extra_context)
 
 
 def event_detail(request, event_id):

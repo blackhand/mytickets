@@ -1,4 +1,5 @@
 {% extends "ticket/index.html" %}
+{% load paginator %}
 {% block title %}Eventos{% endblock %}
 {% block content %}
 <ul>
@@ -7,11 +8,8 @@
 {% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}
 <a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a><br /><br />
 {{ event.description }}<br /><br />
-{% comment %}
-Auditorio: {{ event.auditorium }}<br />
-Fechas: del {{ event.start_date }} al {{ event.end_date }}<br /><br />
-{% endcomment %}
 </li>
+{% paginator %}
 {% endfor %}
 </ul>
 {% endblock %}

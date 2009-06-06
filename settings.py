@@ -95,6 +95,9 @@ INSTALLED_APPS = (
     'south',
     'django_extensions',
 
+    # common views and middleware
+    'common',
+
     # Mytickets apps
     'cart',
     'ticket',
