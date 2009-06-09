@@ -1,7 +1,7 @@
 {% extends "ticket/index.html" %}
 {% block title %}Evento {{ event.name }}{% endblock %}
 {% block topmenu %}
-<img src='{{ event.image.thumbnail }}'/>
+<img src='{{ event.image.extra_thumbnails.small }}'/>
 <h2>{{event.artist }}, {{ event.name }}</h2>
 <br />
 {{ event.description }}
