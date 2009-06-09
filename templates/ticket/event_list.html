@@ -7,7 +7,8 @@
 <li>
 {% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}
 <a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a><br /><br />
-{{ event.description }}<br /><br />
+{{ event.description }}<br />
+del {{ event.start_date }} al {{ event.end_date }}<br />
 </li>
 {% endfor %}
 {% if is_paginated %}{% paginator %}{% endif %}
