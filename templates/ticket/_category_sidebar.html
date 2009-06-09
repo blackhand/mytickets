@@ -1,7 +1,7 @@
 <ul class='category_menu'>
     {% for category in categories %}
-    <li><a href='{% url event_list category %}'>{{ category }}</a></li>
+    <li><a href='{% url event_list category %}'>&nbsp;&nbsp;&nbsp;{{ category }}</a></li>
     {% endfor %}
     <br />
-    <li><a href='{% url homepage %}'>Todos</a></li>
+    <li><a href='{% url homepage %}'>&nbsp;&nbsp;&nbsp;Todos</a></li>
 </ul>

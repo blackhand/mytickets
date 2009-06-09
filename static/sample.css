@@ -14,7 +14,7 @@ html {
 	padding: 0;
 	}
 body { 
-	font: 75% georgia, sans-serif;
+	font: 11px tahoma, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
 	background: #9D9D9D url(background.jpg) no-repeat bottom left; 
@@ -34,16 +34,16 @@ h3 {
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: #9B1E18;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #9B1E18;
 	}
 a:hover, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: #8E8E8E;
 	}
 acronym {
 	border-bottom: none;
@@ -138,12 +138,12 @@ acronym {
 
 #tableMenu {
 	border: 1px solid #8E8E8E;
-	width:280px;
+	width:195px;
 	margin: 0;
-	padding:0;
+	padding: 0;
 	background-color: #D7D7D7;
 	position: absolute;
-	left: 42px;
+	left: 52px;
 	top: 148px;
 	height: 308px;
 	background-color: #fff;
@@ -154,14 +154,14 @@ acronym {
 	border-left: 1px solid #8E8E8E;
 	border-right: 2px solid #8E8E8E;
 	border-bottom: 2px solid #8E8E8E;
-	width:620px;
+	width:640px;
 	margin: 0;
 	padding:0;
 	background-color: #D7D7D7;
 	position: absolute;
 	top: 132px;
-	right: 42px;
-	height: 214px;
+	right: 52px;
+	height: 159px;
 	background-color: #fff;
 	}
 	
@@ -170,13 +170,13 @@ acronym {
 	border-right: 2px solid #8E8E8E;
 	border-top: 3px solid #A80405;
 	border-bottom: 3px solid #A80405;
-	width:600px;
+	width:620px;
 	margin: 0;
 	padding:5px 10px 5px 10px;
 	background-color: #D7D7D7;
 	position: absolute;
 	top: 384px;
-	right: 42px;
+	right: 52px;
 	height: 514px;
 	background-color: #fff;
 	}
@@ -240,26 +240,37 @@ acronym {
 	}
 
 
-#linkList ul {
-	margin: 0;
-	padding: 0;
-	}
-#linkList li {
-	line-height: 2.5ex; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
+#tableMenu ul {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	list-style-position:inside;
 	}
-#linkList li a:link {
-	color: #988F5E;
+#tableMenu li {
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #9B1E18;
 	}
-#linkList li a:visited {
-	color: #B3AE94;
+#tableMenu li a:link {
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #9B1E18;
 	}
-
-
+#tableMenu li a:hover {
+	display: block;
+	color: #8E8E8E;
+	width: 195px;
+	height: 25px;
+	font-weight: bold;
+	background: #CEE1F7;
+	text-decoration: none;
+	text-align:justify;
+	}
+		
+#tableMenu li a:visited {
+	color: #8E8E8E;
+	}
+	
 #extraDiv1 {
 	background: transparent url(cr2.gif) top left no-repeat; 
 	position: absolute; 
