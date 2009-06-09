@@ -1,10 +1,19 @@
 {% extends "ticket/index.html" %}
 {% block title %}Evento {{ event.name }}{% endblock %}
-{% block content %}
+{% block sidebar %}
 <img src='{{ event.image.thumbnail }}'/>
 <h2>{{event.artist }}, {{ event.name }}</h2>
-{{ event.description }}<br /><br />
+<br />
+{{ event.description }}
+{% endblock %}
+{% block content %}
 Auditorio: {{ event.auditorium }}<br />
 Fechas: del {{ event.start_date }} al {{ event.end_date }}<br /><br />
+Zonas<br />
+<ul>
+    {% for zone in event.zone_set.all %}
+        <li><h4>Zona: {{ zone.name }}<h4><br />Precio: <strong>{{ zone.price }}<br />Localidades: {{ zone.quantity }}<br /></li>
+    {% endfor %}
+</ul>
 {% endblock %}
 

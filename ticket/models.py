@@ -111,6 +111,7 @@ class Event(NamedModel, AuditableModel):
     class Meta:
         verbose_name = _(u'Evento')
         verbose_name_plural = _(u'Eventos')
+        ordering = ['-created_at']
 
     @models.permalink
     def get_absolute_url(self):
