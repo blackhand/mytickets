@@ -305,3 +305,42 @@ acronym {
     top:  0; 
     left: 0;
 }
+
+/* navbar css */
+.navbar {
+  margin: 0px 5px 0px auto;
+  float:right;
+}
+ 
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+ 
+.navbar li {
+  display:inline;
+  padding: 2;
+  margin: 0;
+}
+ 
+.navbar li span.disabled {
+  color: #888888;
+}
+ 
+.navbar a, .navbar a:visited, .navbar a:hover {
+  border: none;
+  padding:0;
+  margin:0;
+  font-weight: normal;
+  color: #000000;
+}
+ 
+.navbar a:hover {
+  font-weight: normal;
+  color: #CB4415;
+}
+ 
+.navbar a.active {
+  font-weight: bold;
+}

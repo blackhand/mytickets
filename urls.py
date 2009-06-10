@@ -10,10 +10,18 @@ admin.autodiscover()
 admin.site.root_path = '/admin/'
 
 urlpatterns = patterns('',
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
-    # to INSTALLED_APPS to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # Admin urls
     (r'^admin/', include(admin.site.urls)),
+    # auth urls
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login'),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout',
+        {
+            'next_page': '/'
+        },
+        name='logout'),
+
+    # Registration urls
+    (r'^accounts/', include('registration.urls')),
     )
 
 # mytickets app urls

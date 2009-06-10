@@ -84,6 +84,14 @@ TEMPLATE_DIRS = (
     join(BASE_DIR, 'templates')
 )
 
+
+# Email Server Settings
+EMAIL_HOST = 'blackhandchronicles.homeip.net'
+EMAIL_HOST_USER = 'yonsy'
+EMAIL_HOST_PASSWORD = 'cieloeinfierno'
+EMAIL_SUBJECT_PREFIX = '[MaccTicket] '
+
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -91,9 +99,10 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
 
-    # external apps
+    # external helper apps
     'south',
     'django_extensions',
+    'registration',
 
     # common views and middleware
     'common',

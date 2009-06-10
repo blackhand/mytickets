@@ -1,3 +1,4 @@
+{% spaceless %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
@@ -31,9 +32,10 @@
 -->
 
 <body onload="window.defaultStatus='css Zen Garden: The Beauty in CSS Design';" id="css-zen-garden">
-
 <div id="container">
-
+{%block navbar %}
+{% include "ticket/_top_nav.html" %}
+{% endblock navbar %}
 	<div id="supportingText">
     
     	<img src="/static/top-bg-gris.png" class="tableGraytop" align="middle" alt="" />
@@ -77,3 +79,4 @@
 
 </body>
 </html>
+{% endspaceless %}
