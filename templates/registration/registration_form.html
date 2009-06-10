@@ -1,0 +1,12 @@
+{% extends "ticket/index.html" %}
+{% block content %}
+
+<form action="" method="post">
+{{ form.non_field_errors }}
+<table id="registration_form" class="data_form">
+    <tr><th colspan="2"><h2 class="register_subtitle">Datos de la cuenta</h2></th></tr>
+    {{ form.as_table }}
+    <tr><td><p><input type="submit" class="boton" value="Crear mi cuenta" /></p></td></tr>
+</table>
+</form>
+{% endblock %}
