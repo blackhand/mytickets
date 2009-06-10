@@ -144,7 +144,7 @@ acronym {
 	background-color: #D7D7D7;
 	position: absolute;
 	left: 52px;
-	top: 148px;
+	top: 147px;
 	height: 308px;
 	background-color: #fff;
 	}
@@ -244,29 +244,33 @@ acronym {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	width: 195px;
 	list-style-position:inside;
 	}
 #tableMenu li {
+	display: block;
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #9B1E18;
+	height: 25px;
+	font-weight: bold;
 	}
 #tableMenu li a:link {
+	display: block;
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #9B1E18;
+	height: 25px;
+	font-weight: bold;
 	}
 #tableMenu li a:hover {
 	display: block;
-	color: #8E8E8E;
-	width: 195px;
+	color: #8E8E8E;	
 	height: 25px;
 	font-weight: bold;
 	background: #CEE1F7;
 	text-decoration: none;
-	text-align:justify;
-	}
-		
+	}		
 #tableMenu li a:visited {
 	color: #8E8E8E;
 	}
