@@ -1,0 +1,30 @@
+{% if first_name and last_name %}
+Bienvenido/a {{ first_name }} {{ last_name }},
+{% else %}
+Bienvenido/a,
+{% endif %}
+   Te encuentras a pocos instantes de ingresar al MaccTicket.
+
+   Para activar tu cuenta, haz click en el siguiente enlace:
+   
+   {{ activation_url }}
+
+   Si no se abre tu navegador y aparece un mensaje de confirmación indicando que la
+   cuenta ha sido activada, copia y pega manualmente el enlace en la barra
+   de dirección de tu navegador y presiona "enter".
+
+   Debes completar esta tarea en los próximos {{ expiration_days }} dias posteriores a
+   la fecha de creación de tu cuenta ya que de lo contrario el código de activación
+   expirará y tendrás que registrarte nuevamente.
+
+   {% if send_password %}
+   Tus credenciales de acceso son las siguientes:
+   
+   Correo electrónico: {{ email }}
+   Contraseña: {{ password }}
+   {% endif %}
+
+Nos vemos en MaccTicket
+
+---
+El equipo de MaccTicket

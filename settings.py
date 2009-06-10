@@ -91,6 +91,8 @@ EMAIL_HOST_USER = 'yonsy'
 EMAIL_HOST_PASSWORD = 'cieloeinfierno'
 EMAIL_SUBJECT_PREFIX = '[MaccTicket] '
 
+# Registration
+ACCOUNT_ACTIVATION_DAYS = 2
 
 INSTALLED_APPS = (
     'django.contrib.auth',
