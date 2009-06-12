@@ -1,4 +1,3 @@
-
 [
     {
         "pk": 22, 
@@ -647,9 +646,7 @@
             "email": "jenifer.saenz@gmail.com", 
             "date_joined": "2009-06-12 09:33:08"
         }
-    }
-]
-[
+    },
     {
         "pk": 2, 
         "model": "sites.site", 
@@ -657,9 +654,7 @@
             "domain": "www.maccticket.com", 
             "name": "MaccTicket"
         }
-    }
-]
-[
+    },
     {
         "pk": 75, 
         "model": "admin.logentry", 
@@ -1634,10 +1629,7 @@
             "user": 1, 
             "content_type": 10
         }
-    }
-]
-[]
-[
+    },
     {
         "pk": 1, 
         "model": "ticket.country", 
