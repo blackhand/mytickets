@@ -290,8 +290,8 @@ acronym {
 /* slideshow css */
 
 .pics {  
-    height:  153px;  
-    width:   205px;  
+    height:  205px;  
+    width:   153px;  
     padding: 0;  
     margin:  0;  
 } 
@@ -300,8 +300,8 @@ acronym {
     padding: 2px;  
     border:  1px solid #ccc;  
     background-color: #eee;  
-    width:  150px; 
-    height: 200px; 
+    width:  200px; 
+    height: 150px; 
     top:  0; 
     left: 0;
 }
