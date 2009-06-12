@@ -186,6 +186,7 @@ class Ticket(NamedModel, AuditableModel):
     }
 
     event = models.ForeignKey(Event)
+    presentation = models.ForeignKey(Presentation)
     zone = models.ForeignKey(Zone,
             limit_choices_to = {'event__exact': event}
             )

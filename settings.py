@@ -97,6 +97,8 @@ ACCOUNT_ACTIVATION_DAYS = 2
 DEFAULT_FROM_EMAIL = 'webmaster@localhost'  
 LOGIN_REDIRECT_URL = '/'  
 
+# Sites contrib app
+SITE_ID = 2 
 
 INSTALLED_APPS = (
     'django.contrib.auth',
