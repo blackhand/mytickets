@@ -3,11 +3,12 @@
 from django.http import HttpResponse
 from django.views.generic.list_detail import object_list, object_detail
 from django.shortcuts import get_object_or_404
+from django.contrib.auth.decorators import login_required
 
-from ticket.models import Event
+from ticket.models import Event, Presentation, Ticket
 from ticket.constants import MAX_EVENTS_PER_PAGE
 
-from datetime import date, timedelta
+from datetime import timedelta
 
 def homepage(request):
     return event_list(request)
@@ -59,7 +60,18 @@ def event_detail(request, event_id):
             extra_context = extra_context)
 
 
-def buy_ticket(request):
+@login_required
+def buy_ticket(request, event_id, presentation_id):
+    """
+    View that process the buy process
+    """
+    event = get_object_or_404(Event, id=event_id)
+    presentation = get_object_or_404(Presentation, id=presentation_id)
+    #if request.method.upper() == 'POST':
+    #    ticket = Ticket(event=event, presentation=presentation)
+
+
+
     return HttpResponse('buy_ticket')
 
 
