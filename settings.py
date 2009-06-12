@@ -90,6 +90,7 @@ EMAIL_HOST = 'blackhandchronicles.homeip.net'
 EMAIL_HOST_USER = 'yonsy'
 EMAIL_HOST_PASSWORD = 'cieloeinfierno'
 EMAIL_SUBJECT_PREFIX = '[MaccTicket] '
+EMAIL_USE_TLS = True
 
 # Registration
 ACCOUNT_ACTIVATION_DAYS = 2
