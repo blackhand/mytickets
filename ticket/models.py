@@ -7,7 +7,7 @@ from django.utils.translation import ugettext as _
 from common.models import AuditableModel, NamedModel
 
 from sorl.thumbnail.fields import ImageWithThumbnailsField
-
+from datetime import timedelta
 
  # Location Models
 
@@ -113,6 +113,24 @@ class Event(NamedModel, AuditableModel):
         verbose_name_plural = _(u'Eventos')
         ordering = ['-created_at']
 
+    def save(self):
+        """
+        overloaded save method to create the asociated presentations
+        for the model
+        """
+        day = self.start_date
+        while day < self.end_date:
+            # check if exist the date in asoc presentations
+            # create if does not exist
+            try:
+                self.presentation_set.get(day=day)
+            except Presentation.DoesNotExist:
+                presentation = Presentation(day=day)
+                self.presentation_set.add(presentation)
+            day += timedelta(1)
+
+        super(Event, self).save()
+                
     @models.permalink
     def get_absolute_url(self):
         """
@@ -120,6 +138,21 @@ class Event(NamedModel, AuditableModel):
         """
         return ('event_detail', [str(self.id)])
 
+
+class Presentation(models.Model):
+    """ Presentation Model """
+    event = models.ForeignKey(Event)
+    day = models.DateField()
+    start_hour = models.TimeField(blank=True, null=True)
+    end_hour = models.TimeField(blank=True, null=True)
+
+    class Meta:
+        verbose_name = 'Horario de Presentacion'
+        verbose_name_plural = 'Horario de Presentaciones'
+
+    def __unicode__(self):
+        return u"%s - %s - %s" % (self.event.name, self.day, self.start_hour, )
+        
 
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """

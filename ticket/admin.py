@@ -1,10 +1,13 @@
 from django.contrib import admin
-from models import Category, Event, Ticket, Auditorium, Province, Country, Artist, Zone
+from models import Category, Event, Ticket, Auditorium, Province, Country, \
+                   Artist, Zone, Presentation
 
 
 class ZoneInline(admin.StackedInline):
     model = Zone 
 
+class PresentationInline(admin.StackedInline):
+    model = Presentation
 
 class ProvinceAdmin(admin.ModelAdmin):
     pass
@@ -24,7 +27,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class EventAdmin(admin.ModelAdmin):
     inlines = [
-            ZoneInline,
+            ZoneInline,Presentation,
             ]
 
 
