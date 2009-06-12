@@ -142,7 +142,7 @@ class Event(NamedModel, AuditableModel):
 class Presentation(models.Model):
     """ Presentation Model """
     event = models.ForeignKey(Event)
-    auditorium = models.ForeignKey(Auditorium)
+    auditorium = models.ForeignKey(Auditorium, blank=True, null=True)
     day = models.DateField()
     start_hour = models.TimeField(blank=True, null=True)
     end_hour = models.TimeField(blank=True, null=True)
@@ -158,7 +158,7 @@ class Presentation(models.Model):
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """
     event = models.ForeignKey(Event)
-    presentation = models.ForeignKey(Presentation)
+    presentation = models.ForeignKey(Presentation, blank=True, null=True)
     price = models.FloatField()
     quantity = models.PositiveIntegerField()
 
