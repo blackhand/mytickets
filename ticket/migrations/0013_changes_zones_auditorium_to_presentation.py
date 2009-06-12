@@ -9,10 +9,10 @@ class Migration:
     def forwards(self, orm):
         
         # Adding field 'Presentation.auditorium'
-        db.add_column('ticket_presentation', 'auditorium', models.ForeignKey(orm.Auditorium))
+        db.add_column('ticket_presentation', 'auditorium', models.ForeignKey(orm.Auditorium, null=True))
         
         # Adding field 'Zone.presentation'
-        db.add_column('ticket_zone', 'presentation', models.ForeignKey(orm.Presentation))
+        db.add_column('ticket_zone', 'presentation', models.ForeignKey(orm.Presentation, null=True))
         
     
     
@@ -77,7 +77,7 @@ class Migration:
             'id': ('models.AutoField', [], {'primary_key': 'True'}),
             'is_deleted': ('models.BooleanField', [], {'default': 'False', 'editable': 'False'}),
             'name': ('models.CharField', [], {'max_length': '64'}),
-            'presentation': ('models.ForeignKey', ["orm['ticket.Presentation']"], {}),
+            'presentation': ('models.ForeignKey', ["orm['ticket.Presentation']"], {'null': 'True'}),
             'price': ('models.FloatField', [], {}),
             'quantity': ('models.PositiveIntegerField', [], {}),
             'updated_at': ('models.DateTimeField', ['u"Fecha de Modificacion"'], {'auto_now': 'True', 'editable': 'False'})
@@ -90,23 +90,12 @@ class Migration:
             'updated_at': ('models.DateTimeField', ['u"Fecha de Modificacion"'], {'auto_now': 'True', 'editable': 'False'})
         },
         'ticket.presentation': {
-            'auditorium': ('models.ForeignKey', ["orm['ticket.Auditorium']"], {}),
+            'auditorium': ('models.ForeignKey', ["orm['ticket.Auditorium']"], {'null': 'True'}),
             'day': ('models.DateField', [], {}),
             'end_hour': ('models.TimeField', [], {'null': 'True', 'blank': 'True'}),
             'event': ('models.ForeignKey', ["orm['ticket.Event']"], {}),
             'id': ('models.AutoField', [], {'primary_key': 'True'}),
             'start_hour': ('models.TimeField', [], {'null': 'True', 'blank': 'True'})
-        },
-        'ticket.profile': {
-            'address': ('models.TextField', [], {}),
-            'country': ('models.ForeignKey', ["orm['ticket.Country']"], {}),
-            'created_at': ('models.DateTimeField', ['u"Fecha de Creacion"'], {'auto_now_add': 'True', 'editable': 'False'}),
-            'id': ('models.AutoField', [], {'primary_key': 'True'}),
-            'is_deleted': ('models.BooleanField', [], {'default': 'False', 'editable': 'False'}),
-            'name': ('models.CharField', [], {'max_length': '64'}),
-            'province': ('models.ForeignKey', ["orm['ticket.Province']"], {}),
-            'updated_at': ('models.DateTimeField', ['u"Fecha de Modificacion"'], {'auto_now': 'True', 'editable': 'False'}),
-            'user': ('models.ForeignKey', ["orm['auth.User']"], {'unique': 'True'})
         },
         'ticket.event': {
             'Meta': {'ordering': "['-created_at']"},
@@ -133,6 +122,17 @@ class Migration:
             'is_deleted': ('models.BooleanField', [], {'default': 'False', 'editable': 'False'}),
             'name': ('models.CharField', [], {'max_length': '64'}),
             'updated_at': ('models.DateTimeField', ['u"Fecha de Modificacion"'], {'auto_now': 'True', 'editable': 'False'})
+        },
+        'ticket.profile': {
+            'address': ('models.TextField', [], {}),
+            'country': ('models.ForeignKey', ["orm['ticket.Country']"], {}),
+            'created_at': ('models.DateTimeField', ['u"Fecha de Creacion"'], {'auto_now_add': 'True', 'editable': 'False'}),
+            'id': ('models.AutoField', [], {'primary_key': 'True'}),
+            'is_deleted': ('models.BooleanField', [], {'default': 'False', 'editable': 'False'}),
+            'name': ('models.CharField', [], {'max_length': '64'}),
+            'province': ('models.ForeignKey', ["orm['ticket.Province']"], {}),
+            'updated_at': ('models.DateTimeField', ['u"Fecha de Modificacion"'], {'auto_now': 'True', 'editable': 'False'}),
+            'user': ('models.ForeignKey', ["orm['auth.User']"], {'unique': 'True'})
         }
     }
     
