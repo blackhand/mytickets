@@ -1,10 +1,3 @@
 #!/bin/bash
 
-echo '' > fixtures/all.json
-
-./manage.py dumpdata --format=json --indent=4 auth >> fixtures/all.json
-./manage.py dumpdata --format=json --indent=4 sites >> fixtures/all.json
-./manage.py dumpdata --format=json --indent=4 admin >> fixtures/all.json
-./manage.py dumpdata --format=json --indent=4 cart >> fixtures/all.json
-./manage.py dumpdata --format=json --indent=4 ticket >> fixtures/all.json
-
+./manage.py dumpdata --format=json --indent=4 auth sites admin cart ticket > fixtures/all.json
