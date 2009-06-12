@@ -6,8 +6,8 @@ Bienvenido/a,
    Te encuentras a pocos instantes de ingresar al MaccTicket.
 
    Para activar tu cuenta, haz click en el siguiente enlace:
-   
-   {{ activation_url }}
+  
+   http://{{ site.domain }}{% url registration_activate activation_key %}
 
    Si no se abre tu navegador y aparece un mensaje de confirmación indicando que la
    cuenta ha sido activada, copia y pega manualmente el enlace en la barra

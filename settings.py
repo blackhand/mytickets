@@ -94,6 +94,9 @@ EMAIL_USE_TLS = True
 
 # Registration
 ACCOUNT_ACTIVATION_DAYS = 2
+DEFAULT_FROM_EMAIL = 'webmaster@localhost'  
+LOGIN_REDIRECT_URL = '/'  
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',

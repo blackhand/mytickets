@@ -1,0 +1,11 @@
+{% extends "ticket/index.html" %}
+{% block content %}
+{<div class="texto">
+<h1>Tu cuenta de usuario ha sido creada exitosamente.</h1>
+
+<p>Un código de activación será enviado a tu cuenta de correo electrónico. 
+Revisa en breve tu correo para poder activar tu cuenta utilizando dicho código.</p>
+
+<p><a href="{% url homepage %}" title="Homepage">Regresar a la página de inicio</a></p>
+</div>
+{% endblock %}
