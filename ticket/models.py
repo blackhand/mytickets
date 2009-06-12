@@ -119,7 +119,7 @@ class Event(NamedModel, AuditableModel):
         for the model
         """
         day = self.start_date
-        while day < self.end_date:
+        while day <= self.end_date:
             # check if exist the date in asoc presentations
             # create if does not exist
             try:
