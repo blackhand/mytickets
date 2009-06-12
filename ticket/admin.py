@@ -6,8 +6,11 @@ from models import Category, Event, Ticket, Auditorium, Province, Country, \
 class ZoneInline(admin.StackedInline):
     model = Zone 
 
-class PresentationInline(admin.StackedInline):
-    model = Presentation
+class PresentationAdmin(admin.ModelAdmin):
+    inlines = [
+            ZoneInline,
+            ]
+
 
 class ProvinceAdmin(admin.ModelAdmin):
     pass
@@ -26,10 +29,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class EventAdmin(admin.ModelAdmin):
-    inlines = [
-            ZoneInline,PresentationInline,
-            ]
-
+    pass
 
 class TicketAdmin(admin.ModelAdmin):
     pass
@@ -44,5 +44,6 @@ admin.site.register(Country, CountryAdmin)
 admin.site.register(Auditorium, AuditoriumAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Event, EventAdmin)
+admin.site.register(Presentation, PresentationAdmin)
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Ticket, TicketAdmin)

@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
 
 from ticket.models import Event, Presentation, Ticket
+from ticket.forms import TicketForm
 from ticket.constants import MAX_EVENTS_PER_PAGE
 
 from datetime import timedelta
@@ -61,19 +62,29 @@ def event_detail(request, event_id):
 
 
 @login_required
-def buy_ticket(request, event_id, presentation_id):
+def buy_ticket(request, presentation_id):
     """
     View that process the buy process
     """
-    event = get_object_or_404(Event, id=event_id)
     presentation = get_object_or_404(Presentation, id=presentation_id)
-    #if request.method.upper() == 'POST':
-    #    ticket = Ticket(event=event, presentation=presentation)
+    if request.method == 'POST':
+        form = TicketForm(request.POST):
+        zone = form.cleaned_data['zone']
+        ticket = Ticket(
+                presentation=presentation,
+                zone=zone,
+                bought_by=request.user,
+                )
+        ticket.save()
+        return buy_sucess(request, ticket)
+
+    
+    zones = presentation.zone_set.all()
 
 
 
     return HttpResponse('buy_ticket')
 
 
-def buy_sucess(request):
+def buy_sucess(request, ticket):
     return HttpResponse('buy_sucess')

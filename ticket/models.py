@@ -90,7 +90,6 @@ class Event(NamedModel, AuditableModel):
     """ Event Model """
     category = models.ForeignKey(Category, null=True)
     artist = models.ForeignKey(Artist)
-    auditorium = models.ForeignKey(Auditorium)
     is_active = models.BooleanField(default=True)
     is_prominent = models.BooleanField(default=False)
     description = models.TextField()
@@ -142,7 +141,7 @@ class Event(NamedModel, AuditableModel):
 class Presentation(models.Model):
     """ Presentation Model """
     event = models.ForeignKey(Event)
-    auditorium = models.ForeignKey(Auditorium, blank=True, null=True)
+    auditorium = models.ForeignKey(Auditorium)
     day = models.DateField()
     start_hour = models.TimeField(blank=True, null=True)
     end_hour = models.TimeField(blank=True, null=True)
@@ -157,8 +156,7 @@ class Presentation(models.Model):
 
 class Zone(NamedModel, AuditableModel):
     """ Zone Model """
-    event = models.ForeignKey(Event)
-    presentation = models.ForeignKey(Presentation, blank=True, null=True)
+    presentation = models.ForeignKey(Presentation)
     price = models.FloatField()
     quantity = models.PositiveIntegerField()
 
@@ -187,10 +185,9 @@ class Ticket(NamedModel, AuditableModel):
             CANCELLED: 'Cancelado',
     }
 
-    event = models.ForeignKey(Event)
     presentation = models.ForeignKey(Presentation)
     zone = models.ForeignKey(Zone,
-            limit_choices_to = {'event__exact': event}
+            limit_choices_to = {'presentation__exact': presentation}
             )
     sell_by = models.ForeignKey(User, null=True, blank=True, related_name='sell_ticket_set')
     bought_by = models.OneToOneField(User, null=True, blank=True, related_name='buy_ticket_set')
