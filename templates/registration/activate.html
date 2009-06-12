@@ -1,0 +1,27 @@
+{% extends 'ticket/index.html' %}
+
+{% block title %}Activación de cuenta{% endblock %}
+
+{% block content %}
+<h1>Hola {{account.first_name}},</h1>
+<div class="texto">
+
+{% if account %}
+
+{% if already_active %}
+<p>La cuenta de usuario ya se encontraba activa.</p>
+{% else %}
+<p>Acabas de activar tu cuenta: <strong>{{ account.email }}</strong>.</p>
+{% endif %}
+
+{% else %}
+
+{% if expired_key %}
+<p>El código de activación ha expirado al superarse el máximo de días permitidos para activar la cuenta.</p>
+{% else %}
+<p>El código de activación no es válido.</p>
+{% endif %}
+
+{% endif %}
+</div>
+{% endblock %}
