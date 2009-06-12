@@ -27,7 +27,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class EventAdmin(admin.ModelAdmin):
     inlines = [
-            ZoneInline,Presentation,
+            ZoneInline,PresentationInline,
             ]
 
 
