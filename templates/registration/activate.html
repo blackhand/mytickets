@@ -3,7 +3,7 @@
 {% block title %}Activación de cuenta{% endblock %}
 
 {% block content %}
-<h1>Hola {{account.first_name}},</h1>
+<h1>Hola</h1>
 <div class="texto">
 
 {% if account %}
@@ -11,7 +11,7 @@
 {% if already_active %}
 <p>La cuenta de usuario ya se encontraba activa.</p>
 {% else %}
-<p>Acabas de activar tu cuenta: <strong>{{ account.email }}</strong>.</p>
+<p>Acabas de activar tu cuenta: <strong>{{ account.user_name }}</strong>.</p>
 {% endif %}
 
 {% else %}

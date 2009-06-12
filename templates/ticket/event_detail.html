@@ -6,13 +6,25 @@
 {{ event.description }}
 {% endblock %}
 {% block content %}
-Auditorio: {{ event.auditorium }}<br />
-Fechas: del {{ event.start_date }} al {{ event.end_date }}<br /><br />
-Zonas<br />
-<ul>
-    {% for zone in event.zone_set.all %}
-        <li><h4>Zona: {{ zone.name }}<h4><br />Precio: <strong>{{ zone.price }}<br />Localidades: {{ zone.quantity }}<br /></li>
+<p>Auditorio: {{ event.auditorium }}</p>
+{% with event.presentation_set.all as presentations %}
+{% if presentations %}
+<p>Fechas de Presentacion</p>
+<table>
+    <tr>
+        <th>Fecha de Presentacion</th>
+        <th>Hora de Inicio</th>
+        <th>Hora de Termino</th>
+        <th></th>
+    </tr>
+    {% for presentation in presentations %}
+    <tr>
+        <td>{{ presentation.day }}</td>
+        <td>{{ presentation.start_hour }}</td>
+        <td>{{ presentation.end_hour }}</td>
+        <td><a class='button' href='#'>Comprar</a><td>
+    </tr>
     {% endfor %}
-</ul>
+</table>
 {% endblock %}
 
