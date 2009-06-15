@@ -1,0 +1,15 @@
+{% extends "ticket/index.html" %}
+{% load paginator %}
+{% block title %}Compra de Ticket{% endblock %}
+{% block topmenu %}
+<h2>{{event.artist }}, {{ event.name }}</h2>
+<img src='{{ event.image.extra_thumbnails.small }}'/>
+{{ event.description }}
+{% endblock %}
+{% block content %}
+<h2>Compra Realizada con Exito</h2>
+<p>Su compra de tickets para {{ presentation }} en zona {{ zone }} fue realizada con exito<p>
+<p>Revisa en breve tu correo para poder tener los codigos de tus tickets.</p>
+<p><a href="{% url homepage %}" title="Homepage">Regresar a la página de inicio</a></p>
+{% endblock %}
+

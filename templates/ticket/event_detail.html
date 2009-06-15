@@ -22,7 +22,7 @@
         <td>{{ presentation.day }}</td>
         <td>{{ presentation.start_hour }}</td>
         <td>{{ presentation.end_hour }}</td>
-        <td><a class='button' href='#'>Comprar</a><td>
+        <td><a class='button' href='{% url buy_ticket presentation.id %}'>Comprar</a><td>
     </tr>
     {% endfor %}
 </table>

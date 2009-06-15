@@ -149,6 +149,7 @@ class Presentation(models.Model):
     class Meta:
         verbose_name = 'Horario de Presentacion'
         verbose_name_plural = 'Horario de Presentaciones'
+        ordering = ['day']
 
     def __unicode__(self):
         return u"%s - %s - %s" % (self.event.name, self.day, self.start_hour, )
@@ -190,9 +191,15 @@ class Ticket(NamedModel, AuditableModel):
             limit_choices_to = {'presentation__exact': presentation}
             )
     sell_by = models.ForeignKey(User, null=True, blank=True, related_name='sell_ticket_set')
-    bought_by = models.OneToOneField(User, null=True, blank=True, related_name='buy_ticket_set')
+    bought_by = models.ForeignKey(User, null=True, blank=True, related_name='buy_ticket_set')
  
     class Meta:
         verbose_name = _(u'Ticket')
         verbose_name_plural = _(u'Tickets')
+
+    def save(self):
+        super(Ticket, self).save()
+        self.name = '%s - %s - %d' % (self.presentation, self.zone, self.id)
+        super(Ticket, self).save()
+
 

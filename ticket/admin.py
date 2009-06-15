@@ -11,6 +11,8 @@ class PresentationAdmin(admin.ModelAdmin):
             ZoneInline,
             ]
 
+class PresentationInline(admin.TabularInline):
+    model = Presentation
 
 class ProvinceAdmin(admin.ModelAdmin):
     pass
@@ -29,7 +31,10 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class EventAdmin(admin.ModelAdmin):
-    pass
+    inlines = [
+            PresentationInline,
+            ]
+
 
 class TicketAdmin(admin.ModelAdmin):
     pass

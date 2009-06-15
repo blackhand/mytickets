@@ -1,0 +1,19 @@
+{% extends "ticket/index.html" %}
+{% load paginator %}
+{% block title %}Compra de Ticket{% endblock %}
+{% block topmenu %}
+<h2>{{event.artist }}, {{ event.name }}</h2>
+<img src='{{ event.image.extra_thumbnails.small }}'/>
+{{ event.description }}
+{% endblock %}
+{% block content %}
+<p>Zonas Disponibles</p>
+{% if form.errors %}
+    {{ forms.error }}
+{% endif %}
+<form action="." method="post">
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+{% endblock %}
+
