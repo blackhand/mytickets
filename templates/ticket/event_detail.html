@@ -1,30 +1,37 @@
 {% extends "ticket/index.html" %}
 {% block title %}Evento {{ event.name }}{% endblock %}
 {% block topmenu %}
-<h2>{{event.artist }}, {{ event.name }}</h2>
-<img src='{{ event.image.extra_thumbnails.small }}'/>
-{{ event.description }}
-{% endblock %}
-{% block content %}
-<p>Auditorio: {{ event.auditorium }}</p>
-{% with event.presentation_set.all as presentations %}
-{% if presentations %}
-<p>Fechas de Presentacion</p>
+<h3>{{event.artist }}, {{ event.name }}</h3>
 <table>
     <tr>
-        <th>Fecha de Presentacion</th>
-        <th>Hora de Inicio</th>
-        <th>Hora de Termino</th>
-        <th></th>
+        <td><img src='{{ event.image.extra_thumbnails.small }}'/></td>
+        <td>
+            <strong>Lugar:</strong> {{ event.auditorium }}<br />
+            <strong>Fechas:</strong> del {{ event.start_date }} al {{ event.end_date }}<br />
+            <p>{{ event.description }}</p>
+        </td>
+        {% with event.auditorium.image as auditorium_image %}
+        {% if auditorium_image %}
+            <td><img src='{{ event.auditorium.image.extra_thumbnails.small }}'/></td>
+        {% endif %}
+        {% endwith %}
     </tr>
-    {% for presentation in presentations %}
+</table>
+{% endblock %}
+{% block content %}
+{% with event.presentation_set.all as presentations %}
+{% if presentations %}
+<table class='eventdetail'>
+    <th>
+        <td>Listado de Posiciones</td>
+        <td>Mapa de ubicaciones</td>
+    </th>
     <tr>
-        <td>{{ presentation.day }}</td>
-        <td>{{ presentation.start_hour }}</td>
-        <td>{{ presentation.end_hour }}</td>
-        <td><a class='button' href='{% url buy_ticket presentation.id %}'>Comprar</a><td>
+        <td>
+            Formulario de Compra
+        <td>
     </tr>
-    {% endfor %}
+
 </table>
 {% else %}
 <p>No hay presentacion programadas todavia</p>

@@ -2,16 +2,18 @@
 {% load paginator %}
 {% block title %}Eventos{% endblock %}
 {% block content %}
-<ul>
-{% for event in object_list %}
-<li>
-{% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}
-<a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a><br />
-{{ event.description }}<br />
-del {{ event.start_date }} al {{ event.end_date }}<br /><br />
-</li>
+<table>
+    {% for event in object_list %}
+    <tr>
+        <td>
+            {% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}
+            <p><a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a></p>
+            <p>{{ event.description }}</p>
+        </td>
+        <td><a class='button' href='{{ event.get_absolute_url }}'>Comprar</a></td>
+    </tr>
 {% endfor %}
+</table>
 {% if is_paginated %}{% paginator %}{% endif %}
-</ul>
 {% endblock %}
 

@@ -90,6 +90,7 @@ class Event(NamedModel, AuditableModel):
     """ Event Model """
     category = models.ForeignKey(Category, null=True)
     artist = models.ForeignKey(Artist)
+    auditorium = models.ForeignKey(Auditorium, blank=True, null=True)
     is_active = models.BooleanField(default=True)
     is_prominent = models.BooleanField(default=False)
     description = models.TextField()
@@ -129,6 +130,10 @@ class Event(NamedModel, AuditableModel):
             day += timedelta(1)
 
         super(Event, self).save()
+
+    @property
+    def zones(self):
+        return self.presentation_set.all()[0].zone_set.all()
                 
     @models.permalink
     def get_absolute_url(self):
@@ -141,7 +146,6 @@ class Event(NamedModel, AuditableModel):
 class Presentation(models.Model):
     """ Presentation Model """
     event = models.ForeignKey(Event)
-    auditorium = models.ForeignKey(Auditorium)
     day = models.DateField()
     start_hour = models.TimeField(blank=True, null=True)
     end_hour = models.TimeField(blank=True, null=True)

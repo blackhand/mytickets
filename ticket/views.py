@@ -54,15 +54,15 @@ def event_detail(request, event_id):
 
 
 @login_required
-def buy_ticket(request, presentation_id):
+def buy_ticket(request, event_id):
     """
     View that process the buy process
     """
-    presentation = get_object_or_404(Presentation, id=presentation_id)
+    event = get_object_or_404(Presentation, id=event_id)
 
-    zones = presentation.zone_set.filter(quantity__gt=0)
 
     if request.method == 'POST':
+        """
         form = TicketForm(presentation, request.POST)
         if form.is_valid():
             quantity = form.cleaned_data['quantity']
@@ -81,11 +81,14 @@ def buy_ticket(request, presentation_id):
                     reverse(
                         'buy_sucess',
                         args=[str(presentation.id), str(zone.id)]))
+        """
+        pass
+            
             
 
-    form = TicketForm(presentation)
+    form = TicketForm(event_id)
     extra_context = {
-            'event': presentation.event,
+            'event': event,
             'form': form
             }
 
