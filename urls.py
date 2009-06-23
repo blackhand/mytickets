@@ -29,8 +29,7 @@ urlpatterns += patterns('ticket.views',
     url(r'^$', 'homepage', name='homepage'),
     url(r'^(?P<category>\w+)/$', 'event_list', name='event_list'),
     url(r'^event/(?P<event_id>\w+)/$', 'event_detail', name='event_detail'),
-    url(r'^presentation/(?P<presentation_id>\w+)/$', 'buy_ticket', name='buy_ticket'),
-    url(r'^presentation/(?P<presentation_id>\w+)/(?P<zone_id>\w+)/sucess/$', 'buy_sucess', name='buy_sucess'),
+    url(r'^event/(?P<presentation_id>\w+)/(?P<zone_id>\w+)/sucess/$', 'buy_sucess', name='buy_sucess'),
     )
 
 # static files in DEBUG mode
