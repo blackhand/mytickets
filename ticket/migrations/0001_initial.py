@@ -27,7 +27,7 @@ class Migration:
             ('is_deleted', models.BooleanField(default=False, editable=False)),
             ('name', models.CharField(max_length=64)),
             ('presentation', models.ForeignKey(orm.Presentation)),
-            ('zone', models.ForeignKey(orm.Zone, limit_choices_to={'presentation__exact':presentation})),
+            ('zone', models.ForeignKey(orm.Zone)),
             ('sell_by', models.ForeignKey(orm['auth.User'], related_name='sell_ticket_set', null=True, blank=True)),
             ('bought_by', models.ForeignKey(orm['auth.User'], related_name='buy_ticket_set', null=True, blank=True)),
         ))
