@@ -35,37 +35,25 @@ def event_list(request,
             paginate_by=MAX_EVENTS_PER_PAGE,
             extra_context=extra_context)
 
-
+@login_required
 def event_detail(request, event_id):
     """
     this view manage the detail for and event
     """
-    queryset = Event.objects.all()
-    dates = list()
     event = get_object_or_404(Event, id=event_id)
 
-    extra_context = {}
-    
-    return object_detail(request,
-            queryset = queryset,
-            object_id = event_id,
-            template_object_name = 'event',
-            extra_context = extra_context)
-
-
-@login_required
-def buy_ticket(request, event_id):
-    """
-    View that process the buy process
-    """
-    event = get_object_or_404(Presentation, id=event_id)
-
-
     if request.method == 'POST':
-        """
-        form = TicketForm(presentation, request.POST)
+        form = TicketForm(event, request.POST)
         if form.is_valid():
             quantity = form.cleaned_data['quantity']
+            presentation = Presentation.objects.get(
+                    event = event,
+                    day = form.cleaned_data['date']
+                    )
+
+            import pdb
+            pdb.set_trace()
+
             for t in range(0,quantity):
                 ticket = Ticket(
                     presentation = presentation,
@@ -76,29 +64,27 @@ def buy_ticket(request, event_id):
                 zone = ticket.zone
                 zone.quantity -= 1
                 zone.save()
-            
+
             return HttpResponseRedirect(
                     reverse(
                         'buy_sucess',
                         args=[str(presentation.id), str(zone.id)]))
-        """
-        pass
-            
-            
 
-    form = TicketForm(event_id)
+    queryset = Event.objects.all()
+    dates = list()
+    form = TicketForm(event)
     extra_context = {
-            'event': event,
             'form': form
             }
 
-    return render_response(
-            request,
-            'ticket/buy_ticket.html',
-            extra_context
-            )
+    return object_detail(request,
+            queryset = queryset,
+            object_id = event_id,
+            template_object_name = 'event',
+            extra_context = extra_context)
 
 
+@login_required
 def buy_sucess(request, presentation_id, zone_id):
     presentation = get_object_or_404(Presentation, id=presentation_id)
     zone = get_object_or_404(Zone, id=zone_id)

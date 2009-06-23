@@ -21,16 +21,23 @@
 {% block content %}
 {% with event.presentation_set.all as presentations %}
 {% if presentations %}
-<table class='eventdetail'>
-    <th>
+<table class='eventdetail' border='2'>
+    <tr>
         <td>Listado de Posiciones</td>
         <td>Mapa de ubicaciones</td>
-    </th>
+    </tr>
     <tr>
         <td>
-            Formulario de Compra
+            <form method='post' action='.'>
+                {{ form.as_p}}
+                <p><input type="submit" value="Comprar"></p>
+            </form>
+        </td>
         <td>
+            <img src='{{ MEDIA_URL }}default-auditorium.gif' />
+        </td>
     </tr>
+
 
 </table>
 {% else %}
