@@ -132,8 +132,18 @@ class Event(NamedModel, AuditableModel):
         super(Event, self).save()
 
     @property
-    def zones(self):
+    def zone_list(self):
         return self.presentation_set.all()[0].zone_set.all()
+
+    @property
+    def date_list(self):
+        d = self.start_date
+        result_list = []
+        while d <= self.end_date:
+            result_list.append(d)
+            d += timedelta(days=1)
+        return result_list
+
                 
     @models.permalink
     def get_absolute_url(self):

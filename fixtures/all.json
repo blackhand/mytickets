@@ -1,599 +1,5 @@
 [
     {
-        "pk": 22, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_logentry", 
-            "name": "Can add log entry", 
-            "content_type": 8
-        }
-    }, 
-    {
-        "pk": 23, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_logentry", 
-            "name": "Can change log entry", 
-            "content_type": 8
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_logentry", 
-            "name": "Can delete log entry", 
-            "content_type": 8
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_group", 
-            "name": "Can add group", 
-            "content_type": 2
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_message", 
-            "name": "Can add message", 
-            "content_type": 4
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_permission", 
-            "name": "Can add permission", 
-            "content_type": 1
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_user", 
-            "name": "Can add user", 
-            "content_type": 3
-        }
-    }, 
-    {
-        "pk": 5, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_group", 
-            "name": "Can change group", 
-            "content_type": 2
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_message", 
-            "name": "Can change message", 
-            "content_type": 4
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_permission", 
-            "name": "Can change permission", 
-            "content_type": 1
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_user", 
-            "name": "Can change user", 
-            "content_type": 3
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_group", 
-            "name": "Can delete group", 
-            "content_type": 2
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_message", 
-            "name": "Can delete message", 
-            "content_type": 4
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_permission", 
-            "name": "Can delete permission", 
-            "content_type": 1
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_user", 
-            "name": "Can delete user", 
-            "content_type": 3
-        }
-    }, 
-    {
-        "pk": 34, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_country", 
-            "name": "Can add Pais", 
-            "content_type": 12
-        }
-    }, 
-    {
-        "pk": 31, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_item", 
-            "name": "Can add item", 
-            "content_type": 11
-        }
-    }, 
-    {
-        "pk": 35, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_country", 
-            "name": "Can change Pais", 
-            "content_type": 12
-        }
-    }, 
-    {
-        "pk": 32, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_item", 
-            "name": "Can change item", 
-            "content_type": 11
-        }
-    }, 
-    {
-        "pk": 36, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_country", 
-            "name": "Can delete Pais", 
-            "content_type": 12
-        }
-    }, 
-    {
-        "pk": 33, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_item", 
-            "name": "Can delete item", 
-            "content_type": 11
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_contenttype", 
-            "name": "Can add content type", 
-            "content_type": 5
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_contenttype", 
-            "name": "Can change content type", 
-            "content_type": 5
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_contenttype", 
-            "name": "Can delete content type", 
-            "content_type": 5
-        }
-    }, 
-    {
-        "pk": 28, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_cart", 
-            "name": "Can add cart", 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 29, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_cart", 
-            "name": "Can change cart", 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 30, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_cart", 
-            "name": "Can delete cart", 
-            "content_type": 10
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_session", 
-            "name": "Can add session", 
-            "content_type": 6
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_session", 
-            "name": "Can change session", 
-            "content_type": 6
-        }
-    }, 
-    {
-        "pk": 18, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_session", 
-            "name": "Can delete session", 
-            "content_type": 6
-        }
-    }, 
-    {
-        "pk": 19, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_site", 
-            "name": "Can add site", 
-            "content_type": 7
-        }
-    }, 
-    {
-        "pk": 20, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_site", 
-            "name": "Can change site", 
-            "content_type": 7
-        }
-    }, 
-    {
-        "pk": 21, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_site", 
-            "name": "Can delete site", 
-            "content_type": 7
-        }
-    }, 
-    {
-        "pk": 25, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_migrationhistory", 
-            "name": "Can add migration history", 
-            "content_type": 9
-        }
-    }, 
-    {
-        "pk": 26, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_migrationhistory", 
-            "name": "Can change migration history", 
-            "content_type": 9
-        }
-    }, 
-    {
-        "pk": 27, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_migrationhistory", 
-            "name": "Can delete migration history", 
-            "content_type": 9
-        }
-    }, 
-    {
-        "pk": 46, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_artist", 
-            "name": "Can add Artista", 
-            "content_type": 16
-        }
-    }, 
-    {
-        "pk": 40, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_auditorium", 
-            "name": "Can add Auditorio", 
-            "content_type": 14
-        }
-    }, 
-    {
-        "pk": 43, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_category", 
-            "name": "Can add Categoria", 
-            "content_type": 15
-        }
-    }, 
-    {
-        "pk": 49, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_event", 
-            "name": "Can add Evento", 
-            "content_type": 17
-        }
-    }, 
-    {
-        "pk": 64, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_presentation", 
-            "name": "Can add Horario de Presentacion", 
-            "content_type": 22
-        }
-    }, 
-    {
-        "pk": 55, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_profile", 
-            "name": "Can add profile", 
-            "content_type": 19
-        }
-    }, 
-    {
-        "pk": 37, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_province", 
-            "name": "Can add Provincia", 
-            "content_type": 13
-        }
-    }, 
-    {
-        "pk": 61, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_registrationprofile", 
-            "name": "Can add registration profile", 
-            "content_type": 21
-        }
-    }, 
-    {
-        "pk": 58, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_ticket", 
-            "name": "Can add Ticket", 
-            "content_type": 20
-        }
-    }, 
-    {
-        "pk": 52, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "add_zone", 
-            "name": "Can add Zona", 
-            "content_type": 18
-        }
-    }, 
-    {
-        "pk": 47, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_artist", 
-            "name": "Can change Artista", 
-            "content_type": 16
-        }
-    }, 
-    {
-        "pk": 41, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_auditorium", 
-            "name": "Can change Auditorio", 
-            "content_type": 14
-        }
-    }, 
-    {
-        "pk": 44, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_category", 
-            "name": "Can change Categoria", 
-            "content_type": 15
-        }
-    }, 
-    {
-        "pk": 50, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_event", 
-            "name": "Can change Evento", 
-            "content_type": 17
-        }
-    }, 
-    {
-        "pk": 65, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_presentation", 
-            "name": "Can change Horario de Presentacion", 
-            "content_type": 22
-        }
-    }, 
-    {
-        "pk": 56, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_profile", 
-            "name": "Can change profile", 
-            "content_type": 19
-        }
-    }, 
-    {
-        "pk": 38, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_province", 
-            "name": "Can change Provincia", 
-            "content_type": 13
-        }
-    }, 
-    {
-        "pk": 62, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_registrationprofile", 
-            "name": "Can change registration profile", 
-            "content_type": 21
-        }
-    }, 
-    {
-        "pk": 59, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_ticket", 
-            "name": "Can change Ticket", 
-            "content_type": 20
-        }
-    }, 
-    {
-        "pk": 53, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "change_zone", 
-            "name": "Can change Zona", 
-            "content_type": 18
-        }
-    }, 
-    {
-        "pk": 48, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_artist", 
-            "name": "Can delete Artista", 
-            "content_type": 16
-        }
-    }, 
-    {
-        "pk": 42, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_auditorium", 
-            "name": "Can delete Auditorio", 
-            "content_type": 14
-        }
-    }, 
-    {
-        "pk": 45, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_category", 
-            "name": "Can delete Categoria", 
-            "content_type": 15
-        }
-    }, 
-    {
-        "pk": 51, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_event", 
-            "name": "Can delete Evento", 
-            "content_type": 17
-        }
-    }, 
-    {
-        "pk": 66, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_presentation", 
-            "name": "Can delete Horario de Presentacion", 
-            "content_type": 22
-        }
-    }, 
-    {
-        "pk": 57, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_profile", 
-            "name": "Can delete profile", 
-            "content_type": 19
-        }
-    }, 
-    {
-        "pk": 39, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_province", 
-            "name": "Can delete Provincia", 
-            "content_type": 13
-        }
-    }, 
-    {
-        "pk": 63, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_registrationprofile", 
-            "name": "Can delete registration profile", 
-            "content_type": 21
-        }
-    }, 
-    {
-        "pk": 60, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_ticket", 
-            "name": "Can delete Ticket", 
-            "content_type": 20
-        }
-    }, 
-    {
-        "pk": 54, 
-        "model": "auth.permission", 
-        "fields": {
-            "codename": "delete_zone", 
-            "name": "Can delete Zona", 
-            "content_type": 18
-        }
-    }, 
-    {
         "pk": 7, 
         "model": "auth.user", 
         "fields": {
@@ -639,7 +45,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2009-06-12 12:53:52", 
+            "last_login": "2009-06-22 03:50:57", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$6936a$ec59a85e49dd5f0a11ff42cee9b159377f1a798f", 
@@ -653,6 +59,19 @@
         "fields": {
             "domain": "127.0.0.1:8000", 
             "name": "MaccTicket"
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-06-22 03:51:12", 
+            "object_repr": "example.com", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 7
         }
     }, 
     {
@@ -747,19 +166,6 @@
         }
     }, 
     {
-        "pk": 70, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2009-06-10 17:58:27", 
-            "object_repr": "mika", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 1, 
-            "content_type": 3
-        }
-    }, 
-    {
         "pk": 69, 
         "model": "admin.logentry", 
         "fields": {
@@ -767,6 +173,19 @@
             "action_time": "2009-06-10 17:58:27", 
             "object_repr": "cale", 
             "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2009-06-10 17:58:27", 
+            "object_repr": "mika", 
+            "object_id": "2", 
             "change_message": "", 
             "user": 1, 
             "content_type": 3
@@ -2106,12 +1525,13 @@
             "end_date": "2009-06-13", 
             "artist": 15, 
             "created_at": "2009-06-07 17:44:29", 
+            "description": "Beethoven Festival", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:26", 
             "is_prominent": false, 
             "image": "event_images/opera-and-classical.jpg", 
             "start_date": "2009-06-13", 
-            "description": "Beethoven Festival"
+            "auditorium": 2
         }
     }, 
     {
@@ -2124,12 +1544,13 @@
             "end_date": "2009-06-28", 
             "artist": 14, 
             "created_at": "2009-06-07 17:22:17", 
+            "description": "Representative Albums: \"Live at the Regal,\" \"Original Greatest Hits,\" \"Singin' the Blues/The Blues\"\r\nRepresentative Songs: \"The Thrill Is Gone,\" \"Every Day I Have the Blues,\" \"Sweet Sixteen\"", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:27", 
             "is_prominent": false, 
             "image": "event_images/bb-king.jpg", 
             "start_date": "2009-06-24", 
-            "description": "Representative Albums: \"Live at the Regal,\" \"Original Greatest Hits,\" \"Singin' the Blues/The Blues\"\r\nRepresentative Songs: \"The Thrill Is Gone,\" \"Every Day I Have the Blues,\" \"Sweet Sixteen\""
+            "auditorium": 2
         }
     }, 
     {
@@ -2142,12 +1563,13 @@
             "end_date": "2009-06-25", 
             "artist": 13, 
             "created_at": "2009-06-07 17:14:47", 
+            "description": "Secure your The Prodigy tickets now and see the mighty electro-rock/big-beat superstars on their extensive 2009 UK tour, including dates at London's Wembley Arena and The O2 Academy Brixton. Tickets to all Prodigy shows are now available through GET ME IN!", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:32", 
             "is_prominent": false, 
             "image": "event_images/the-prodigy.jpg", 
             "start_date": "2009-06-12", 
-            "description": "Secure your The Prodigy tickets now and see the mighty electro-rock/big-beat superstars on their extensive 2009 UK tour, including dates at London's Wembley Arena and The O2 Academy Brixton. Tickets to all Prodigy shows are now available through GET ME IN!"
+            "auditorium": 2
         }
     }, 
     {
@@ -2160,12 +1582,13 @@
             "end_date": "2009-06-17", 
             "artist": 7, 
             "created_at": "2009-06-05 15:45:46", 
+            "description": "A series of exclusive shows at London\u2019s The O2 marks Britney\u2019s long-awaited comeback. See the the pop icon live with Britney Spears tickets from our GET ME IN! marketplace. ", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:33", 
             "is_prominent": true, 
             "image": "event_images/britney-spears.jpg", 
             "start_date": "2009-06-10", 
-            "description": "A series of exclusive shows at London\u2019s The O2 marks Britney\u2019s long-awaited comeback. See the the pop icon live with Britney Spears tickets from our GET ME IN! marketplace. "
+            "auditorium": 2
         }
     }, 
     {
@@ -2178,12 +1601,13 @@
             "end_date": "2009-06-22", 
             "artist": 12, 
             "created_at": "2009-06-05 15:40:32", 
+            "description": "U2 return with their biggest and most advanced live production ever. Secure your concert tickets for the U2 360\u00b0 Tour and see U2 at London\u2019s Wembley Stadium, Glasgow\u2019s Hampden Park, Sheffield\u2019s Don Valley Stadium and the Millennium Stadium in Cardiff. Your chance to experience songs off their current #1 album \u2018No Line On The Horizon\u2019 and classic U2 anthems, such as \u2018Beautiful Day\u2019 \u2018Pride\u2019 or \u2018Vertigo\u2019.", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:34", 
             "is_prominent": true, 
             "image": "event_images/u2.jpg", 
             "start_date": "2009-06-14", 
-            "description": "U2 return with their biggest and most advanced live production ever. Secure your concert tickets for the U2 360\u00b0 Tour and see U2 at London\u2019s Wembley Stadium, Glasgow\u2019s Hampden Park, Sheffield\u2019s Don Valley Stadium and the Millennium Stadium in Cardiff. Your chance to experience songs off their current #1 album \u2018No Line On The Horizon\u2019 and classic U2 anthems, such as \u2018Beautiful Day\u2019 \u2018Pride\u2019 or \u2018Vertigo\u2019."
+            "auditorium": 2
         }
     }, 
     {
@@ -2196,12 +1620,13 @@
             "end_date": "2009-09-24", 
             "artist": 4, 
             "created_at": "2009-06-04 16:34:18", 
+            "description": "Metallica en su tour de promocion de su nuevo album Death Magnetic", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:34", 
             "is_prominent": false, 
             "image": "", 
             "start_date": "2009-09-24", 
-            "description": "Metallica en su tour de promocion de su nuevo album Death Magnetic"
+            "auditorium": 1
         }
     }, 
     {
@@ -2214,12 +1639,13 @@
             "end_date": "2009-05-31", 
             "artist": 2, 
             "created_at": "2009-05-13 12:38:41", 
+            "description": "asdadasd", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:34", 
             "is_prominent": true, 
             "image": "event_images/michael-jackson-2.jpg", 
             "start_date": "2009-05-13", 
-            "description": "asdadasd"
+            "auditorium": 1
         }
     }, 
     {
@@ -2232,12 +1658,13 @@
             "end_date": "2009-05-31", 
             "artist": 3, 
             "created_at": "2009-05-13 12:38:14", 
+            "description": "asdasda", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:34", 
             "is_prominent": false, 
             "image": "event_images/oasis-1.jpg", 
             "start_date": "2009-05-13", 
-            "description": "asdasda"
+            "auditorium": 2
         }
     }, 
     {
@@ -2250,638 +1677,12 @@
             "end_date": "2009-05-31", 
             "artist": 1, 
             "created_at": "2009-05-13 11:55:39", 
+            "description": "The opening night of Madonna's 2009 Sticky & Sweet Tour is just 11 weeks away, and you can count on Icon and Madonna.com to keep you entertained until then\u2026", 
             "is_active": true, 
-            "updated_at": "2009-06-12 09:16:48", 
+            "updated_at": "2009-06-22 04:45:35", 
             "is_prominent": false, 
             "image": "", 
             "start_date": "2009-05-13", 
-            "description": "The opening night of Madonna's 2009 Sticky & Sweet Tour is just 11 weeks away, and you can count on Icon and Madonna.com to keep you entertained until then\u2026"
-        }
-    }, 
-    {
-        "pk": 87, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 9, 
-            "day": "2009-06-13", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 88, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 8, 
-            "day": "2009-06-28", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 8, 
-            "day": "2009-06-24", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 8, 
-            "day": "2009-06-25", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 8, 
-            "day": "2009-06-26", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 8, 
-            "day": "2009-06-27", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 7, 
-            "day": "2009-06-15", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 7, 
-            "day": "2009-06-16", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 7, 
-            "day": "2009-06-17", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 7, 
-            "day": "2009-06-18", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 7, 
-            "day": "2009-06-19", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 7, 
-            "day": "2009-06-20", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 7, 
-            "day": "2009-06-21", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 89, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 7, 
-            "day": "2009-06-25", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 5, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 7, 
-            "day": "2009-06-12", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 7, 
-            "day": "2009-06-13", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 7, 
-            "day": "2009-06-14", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 7, 
-            "day": "2009-06-22", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 7, 
-            "day": "2009-06-23", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 7, 
-            "day": "2009-06-24", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 90, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 6, 
-            "day": "2009-06-17", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 18, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 6, 
-            "day": "2009-06-10", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 19, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 6, 
-            "day": "2009-06-11", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 20, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 6, 
-            "day": "2009-06-12", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 21, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 6, 
-            "day": "2009-06-13", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 22, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 6, 
-            "day": "2009-06-14", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 23, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 6, 
-            "day": "2009-06-15", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 6, 
-            "day": "2009-06-16", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 91, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 5, 
-            "day": "2009-06-22", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 25, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 5, 
-            "day": "2009-06-14", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 26, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 5, 
-            "day": "2009-06-15", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 27, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 5, 
-            "day": "2009-06-16", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 28, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 5, 
-            "day": "2009-06-17", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 29, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 5, 
-            "day": "2009-06-18", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 30, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 5, 
-            "day": "2009-06-19", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 31, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 5, 
-            "day": "2009-06-20", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 32, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 5, 
-            "day": "2009-06-21", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 92, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 4, 
-            "day": "2009-09-24", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 33, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 3, 
-            "day": "2009-05-13", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 34, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-14", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 35, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 3, 
-            "day": "2009-05-15", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 36, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 3, 
-            "day": "2009-05-16", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 37, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 3, 
-            "day": "2009-05-17", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 38, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-18", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 39, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 3, 
-            "day": "2009-05-19", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 40, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 3, 
-            "day": "2009-05-20", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 41, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 3, 
-            "day": "2009-05-21", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 42, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-22", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 43, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 3, 
-            "day": "2009-05-23", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 44, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 3, 
-            "day": "2009-05-24", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 45, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-25", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 46, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 3, 
-            "day": "2009-05-26", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 47, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-27", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 48, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 3, 
-            "day": "2009-05-28", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 49, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 3, 
-            "day": "2009-05-29", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 50, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 3, 
-            "day": "2009-05-30", 
-            "auditorium": 1
-        }
-    }, 
-    {
-        "pk": 93, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 3, 
-            "day": "2009-05-31", 
             "auditorium": 1
         }
     }, 
@@ -2892,206 +1693,17 @@
             "start_hour": "19:30:00", 
             "end_hour": "21:30:00", 
             "event": 2, 
-            "day": "2009-05-13", 
-            "auditorium": 2
+            "day": "2009-05-13"
         }
     }, 
     {
-        "pk": 52, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-14", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 53, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-15", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 54, 
+        "pk": 33, 
         "model": "ticket.presentation", 
         "fields": {
             "start_hour": "19:00:00", 
             "end_hour": "21:00:00", 
-            "event": 2, 
-            "day": "2009-05-16", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 55, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 2, 
-            "day": "2009-05-17", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 56, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:30:00", 
-            "end_hour": "23:30:00", 
-            "event": 2, 
-            "day": "2009-05-18", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 57, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-19", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 58, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 2, 
-            "day": "2009-05-20", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 59, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 2, 
-            "day": "2009-05-21", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 60, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 2, 
-            "day": "2009-05-22", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 61, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:30:00", 
-            "end_hour": "21:30:00", 
-            "event": 2, 
-            "day": "2009-05-23", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 62, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 2, 
-            "day": "2009-05-24", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 63, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "21:00:00", 
-            "end_hour": "23:00:00", 
-            "event": 2, 
-            "day": "2009-05-25", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 64, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-26", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 65, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-27", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 66, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:00:00", 
-            "end_hour": "22:00:00", 
-            "event": 2, 
-            "day": "2009-05-28", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 67, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 2, 
-            "day": "2009-05-29", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 68, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "20:30:00", 
-            "end_hour": "22:30:00", 
-            "event": 2, 
-            "day": "2009-05-30", 
-            "auditorium": 2
-        }
-    }, 
-    {
-        "pk": 94, 
-        "model": "ticket.presentation", 
-        "fields": {
-            "start_hour": "19:00:00", 
-            "end_hour": "21:00:00", 
-            "event": 2, 
-            "day": "2009-05-31", 
-            "auditorium": 2
+            "event": 3, 
+            "day": "2009-05-13"
         }
     }, 
     {
@@ -3101,8 +1713,17 @@
             "start_hour": "21:00:00", 
             "end_hour": "23:00:00", 
             "event": 1, 
-            "day": "2009-05-13", 
-            "auditorium": 1
+            "day": "2009-05-13"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-14"
         }
     }, 
     {
@@ -3112,8 +1733,37 @@
             "start_hour": "20:00:00", 
             "end_hour": "22:00:00", 
             "event": 1, 
-            "day": "2009-05-14", 
-            "auditorium": 1
+            "day": "2009-05-14"
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-14"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 3, 
+            "day": "2009-05-15"
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-15"
         }
     }, 
     {
@@ -3123,8 +1773,17 @@
             "start_hour": "21:30:00", 
             "end_hour": "23:30:00", 
             "event": 1, 
-            "day": "2009-05-15", 
-            "auditorium": 1
+            "day": "2009-05-15"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 3, 
+            "day": "2009-05-16"
         }
     }, 
     {
@@ -3134,8 +1793,17 @@
             "start_hour": "19:30:00", 
             "end_hour": "21:30:00", 
             "event": 1, 
-            "day": "2009-05-16", 
-            "auditorium": 1
+            "day": "2009-05-16"
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 2, 
+            "day": "2009-05-16"
         }
     }, 
     {
@@ -3145,8 +1813,47 @@
             "start_hour": "19:30:00", 
             "end_hour": "21:30:00", 
             "event": 1, 
-            "day": "2009-05-17", 
-            "auditorium": 1
+            "day": "2009-05-17"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 3, 
+            "day": "2009-05-17"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 2, 
+            "day": "2009-05-17"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 2, 
+            "day": "2009-05-18"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-18"
         }
     }, 
     {
@@ -3156,8 +1863,17 @@
             "start_hour": "20:30:00", 
             "end_hour": "22:30:00", 
             "event": 1, 
-            "day": "2009-05-18", 
-            "auditorium": 1
+            "day": "2009-05-18"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 3, 
+            "day": "2009-05-19"
         }
     }, 
     {
@@ -3167,8 +1883,17 @@
             "start_hour": "21:00:00", 
             "end_hour": "23:00:00", 
             "event": 1, 
-            "day": "2009-05-19", 
-            "auditorium": 1
+            "day": "2009-05-19"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-19"
         }
     }, 
     {
@@ -3178,8 +1903,27 @@
             "start_hour": "19:30:00", 
             "end_hour": "21:30:00", 
             "event": 1, 
-            "day": "2009-05-20", 
-            "auditorium": 1
+            "day": "2009-05-20"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 2, 
+            "day": "2009-05-20"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 3, 
+            "day": "2009-05-20"
         }
     }, 
     {
@@ -3189,8 +1933,47 @@
             "start_hour": "19:00:00", 
             "end_hour": "21:00:00", 
             "event": 1, 
-            "day": "2009-05-21", 
-            "auditorium": 1
+            "day": "2009-05-21"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 2, 
+            "day": "2009-05-21"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 3, 
+            "day": "2009-05-21"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 2, 
+            "day": "2009-05-22"
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-22"
         }
     }, 
     {
@@ -3200,8 +1983,17 @@
             "start_hour": "19:00:00", 
             "end_hour": "21:00:00", 
             "event": 1, 
-            "day": "2009-05-22", 
-            "auditorium": 1
+            "day": "2009-05-22"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 2, 
+            "day": "2009-05-23"
         }
     }, 
     {
@@ -3211,8 +2003,27 @@
             "start_hour": "19:00:00", 
             "end_hour": "21:00:00", 
             "event": 1, 
-            "day": "2009-05-23", 
-            "auditorium": 1
+            "day": "2009-05-23"
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 3, 
+            "day": "2009-05-23"
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 3, 
+            "day": "2009-05-24"
         }
     }, 
     {
@@ -3222,8 +2033,17 @@
             "start_hour": "20:30:00", 
             "end_hour": "22:30:00", 
             "event": 1, 
-            "day": "2009-05-24", 
-            "auditorium": 1
+            "day": "2009-05-24"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 2, 
+            "day": "2009-05-24"
         }
     }, 
     {
@@ -3233,8 +2053,37 @@
             "start_hour": "20:00:00", 
             "end_hour": "22:00:00", 
             "event": 1, 
-            "day": "2009-05-25", 
-            "auditorium": 1
+            "day": "2009-05-25"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 2, 
+            "day": "2009-05-25"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-25"
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-26"
         }
     }, 
     {
@@ -3244,8 +2093,17 @@
             "start_hour": "20:00:00", 
             "end_hour": "22:00:00", 
             "event": 1, 
-            "day": "2009-05-26", 
-            "auditorium": 1
+            "day": "2009-05-26"
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 3, 
+            "day": "2009-05-26"
         }
     }, 
     {
@@ -3255,8 +2113,27 @@
             "start_hour": "21:00:00", 
             "end_hour": "23:00:00", 
             "event": 1, 
-            "day": "2009-05-27", 
-            "auditorium": 1
+            "day": "2009-05-27"
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-27"
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-27"
         }
     }, 
     {
@@ -3266,8 +2143,27 @@
             "start_hour": "20:00:00", 
             "end_hour": "22:00:00", 
             "event": 1, 
-            "day": "2009-05-28", 
-            "auditorium": 1
+            "day": "2009-05-28"
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 3, 
+            "day": "2009-05-28"
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 2, 
+            "day": "2009-05-28"
         }
     }, 
     {
@@ -3277,8 +2173,37 @@
             "start_hour": "20:30:00", 
             "end_hour": "22:30:00", 
             "event": 1, 
-            "day": "2009-05-29", 
-            "auditorium": 1
+            "day": "2009-05-29"
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 3, 
+            "day": "2009-05-29"
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 2, 
+            "day": "2009-05-29"
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 2, 
+            "day": "2009-05-30"
         }
     }, 
     {
@@ -3288,8 +2213,27 @@
             "start_hour": "20:00:00", 
             "end_hour": "22:00:00", 
             "event": 1, 
-            "day": "2009-05-30", 
-            "auditorium": 1
+            "day": "2009-05-30"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 3, 
+            "day": "2009-05-30"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 3, 
+            "day": "2009-05-31"
         }
     }, 
     {
@@ -3299,112 +2243,2977 @@
             "start_hour": "21:00:00", 
             "end_hour": "23:00:00", 
             "event": 1, 
-            "day": "2009-05-31", 
-            "auditorium": 1
+            "day": "2009-05-31"
         }
     }, 
     {
-        "pk": 3, 
-        "model": "ticket.zone", 
+        "pk": 94, 
+        "model": "ticket.presentation", 
         "fields": {
-            "is_deleted": false, 
-            "name": "VIP", 
-            "price": 100.0, 
-            "updated_at": "2009-06-12 12:56:09", 
-            "presentation": 24, 
-            "created_at": "2009-06-09 16:07:53", 
-            "quantity": 20
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 2, 
+            "day": "2009-05-31"
         }
     }, 
     {
-        "pk": 4, 
-        "model": "ticket.zone", 
+        "pk": 18, 
+        "model": "ticket.presentation", 
         "fields": {
-            "is_deleted": false, 
-            "name": "General", 
-            "price": 40.0, 
-            "updated_at": "2009-06-12 12:56:09", 
-            "presentation": 24, 
-            "created_at": "2009-06-09 16:07:53", 
-            "quantity": 30
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 6, 
+            "day": "2009-06-10"
         }
     }, 
     {
-        "pk": 7, 
-        "model": "ticket.zone", 
+        "pk": 19, 
+        "model": "ticket.presentation", 
         "fields": {
-            "is_deleted": false, 
-            "name": "VIP", 
-            "price": 100.0, 
-            "updated_at": "2009-06-12 12:56:10", 
-            "presentation": 93, 
-            "created_at": "2009-06-09 16:32:53", 
-            "quantity": 10
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 6, 
+            "day": "2009-06-11"
         }
     }, 
     {
-        "pk": 8, 
-        "model": "ticket.zone", 
+        "pk": 20, 
+        "model": "ticket.presentation", 
         "fields": {
-            "is_deleted": false, 
-            "name": "General", 
-            "price": 50.0, 
-            "updated_at": "2009-06-12 12:56:10", 
-            "presentation": 93, 
-            "created_at": "2009-06-09 16:32:53", 
-            "quantity": 20
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "ticket.zone", 
-        "fields": {
-            "is_deleted": false, 
-            "name": "VIP", 
-            "price": 50.0, 
-            "updated_at": "2009-06-12 12:56:10", 
-            "presentation": 94, 
-            "created_at": "2009-06-09 16:05:18", 
-            "quantity": 15
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "ticket.zone", 
-        "fields": {
-            "is_deleted": false, 
-            "name": "General", 
-            "price": 30.0, 
-            "updated_at": "2009-06-12 12:56:10", 
-            "presentation": 94, 
-            "created_at": "2009-06-09 16:05:18", 
-            "quantity": 10
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 6, 
+            "day": "2009-06-12"
         }
     }, 
     {
         "pk": 5, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 7, 
+            "day": "2009-06-12"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 9, 
+            "day": "2009-06-13"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 7, 
+            "day": "2009-06-13"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 6, 
+            "day": "2009-06-13"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 7, 
+            "day": "2009-06-14"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 5, 
+            "day": "2009-06-14"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 6, 
+            "day": "2009-06-14"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 6, 
+            "day": "2009-06-15"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 7, 
+            "day": "2009-06-15"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 5, 
+            "day": "2009-06-15"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 5, 
+            "day": "2009-06-16"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 7, 
+            "day": "2009-06-16"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 6, 
+            "day": "2009-06-16"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 5, 
+            "day": "2009-06-17"
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 6, 
+            "day": "2009-06-17"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 7, 
+            "day": "2009-06-17"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 7, 
+            "day": "2009-06-18"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 5, 
+            "day": "2009-06-18"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 7, 
+            "day": "2009-06-19"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:00:00", 
+            "end_hour": "23:00:00", 
+            "event": 5, 
+            "day": "2009-06-19"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 7, 
+            "day": "2009-06-20"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 5, 
+            "day": "2009-06-20"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 5, 
+            "day": "2009-06-21"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 7, 
+            "day": "2009-06-21"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 5, 
+            "day": "2009-06-22"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 7, 
+            "day": "2009-06-22"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 7, 
+            "day": "2009-06-23"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 7, 
+            "day": "2009-06-24"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 8, 
+            "day": "2009-06-24"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 8, 
+            "day": "2009-06-25"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:00:00", 
+            "end_hour": "21:00:00", 
+            "event": 7, 
+            "day": "2009-06-25"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "21:30:00", 
+            "end_hour": "23:30:00", 
+            "event": 8, 
+            "day": "2009-06-26"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:00:00", 
+            "end_hour": "22:00:00", 
+            "event": 8, 
+            "day": "2009-06-27"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "19:30:00", 
+            "end_hour": "21:30:00", 
+            "event": 8, 
+            "day": "2009-06-28"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "ticket.presentation", 
+        "fields": {
+            "start_hour": "20:30:00", 
+            "end_hour": "22:30:00", 
+            "event": 4, 
+            "day": "2009-09-24"
+        }
+    }, 
+    {
+        "pk": 11, 
         "model": "ticket.zone", 
         "fields": {
             "is_deleted": false, 
             "name": "VIP", 
             "price": 100.0, 
-            "updated_at": "2009-06-12 12:56:11", 
-            "presentation": 95, 
-            "created_at": "2009-06-09 16:17:05", 
-            "quantity": 20
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 8, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
         }
     }, 
     {
-        "pk": 6, 
+        "pk": 12, 
         "model": "ticket.zone", 
         "fields": {
             "is_deleted": false, 
             "name": "General", 
-            "price": 30.0, 
-            "updated_at": "2009-06-12 12:56:11", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 8, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 9, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 9, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 10, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 11, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 11, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 12, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 12, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 13, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 13, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 91, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 91, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 25, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 25, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 26, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 26, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 27, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 27, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 28, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 28, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 29, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 29, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 30, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 30, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 31, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 31, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 32, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 32, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 92, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 92, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 33, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 33, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 34, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 34, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 35, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 35, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 36, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 36, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 37, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 37, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 38, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 38, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 39, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 39, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 40, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 40, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 41, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 41, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 42, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 42, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 43, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 43, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 44, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 44, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 45, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 45, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 46, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 46, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 47, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 47, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 48, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 48, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 49, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 49, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 50, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 50, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 93, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:32", 
+            "presentation": 93, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 51, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 51, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 52, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 52, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 53, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 53, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 54, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 54, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 55, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 55, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 56, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 56, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 57, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 57, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 58, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 58, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 59, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 59, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 60, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 60, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 61, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 61, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 62, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 62, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 63, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 63, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 64, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 08:50:24", 
+            "presentation": 87, 
+            "created_at": "2009-06-15 03:18:59", 
+            "quantity": 199
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 09:04:11", 
+            "presentation": 87, 
+            "created_at": "2009-06-15 03:18:59", 
+            "quantity": 994
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 64, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 65, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 65, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 66, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 66, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 67, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 67, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 68, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 68, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 94, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 94, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 69, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 69, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 70, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 70, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 71, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 71, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 72, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 72, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 73, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 73, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 74, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 74, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 75, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 75, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 76, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 76, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 77, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 77, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 78, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 78, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 139, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 79, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 140, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 79, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 80, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 80, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 81, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 81, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 82, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 82, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 147, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 83, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 148, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 83, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 149, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 84, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 150, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 84, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 151, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 85, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 152, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 85, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 153, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 86, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 154, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 86, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
             "presentation": 95, 
-            "created_at": "2009-06-09 16:17:05", 
-            "quantity": 30
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 156, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 95, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 157, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 87, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 87, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 88, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 88, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 1, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 1, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 2, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 2, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 3, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 3, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 4, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 4, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 14, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 14, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 89, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 89, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 5, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 5, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 6, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 6, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 7, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 7, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 15, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 180, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 15, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 181, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 16, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 182, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:33", 
+            "presentation": 16, 
+            "created_at": "2009-06-15 03:23:33", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 17, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 184, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 17, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 90, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 186, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 90, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 187, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 18, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 188, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 18, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 189, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 19, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 191, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 20, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 192, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 20, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 193, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 21, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 194, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 21, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 195, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 22, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 196, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 22, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 197, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 23, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 198, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 23, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "VIP", 
+            "price": 100.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 24, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 200
+        }
+    }, 
+    {
+        "pk": 200, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 03:23:34", 
+            "presentation": 24, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 1000
+        }
+    }, 
+    {
+        "pk": 190, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 05:19:00", 
+            "presentation": 19, 
+            "created_at": "2009-06-15 03:23:34", 
+            "quantity": 998
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "ticket.zone", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "General", 
+            "price": 50.0, 
+            "updated_at": "2009-06-15 08:21:28", 
+            "presentation": 10, 
+            "created_at": "2009-06-15 03:23:32", 
+            "quantity": 998
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 14", 
+            "zone": 10, 
+            "created_at": "2009-06-15 08:59:42", 
+            "updated_at": "2009-06-15 08:59:42", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 15", 
+            "zone": 10, 
+            "created_at": "2009-06-15 08:59:42", 
+            "updated_at": "2009-06-15 08:59:42", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 16", 
+            "zone": 10, 
+            "created_at": "2009-06-15 09:00:31", 
+            "updated_at": "2009-06-15 09:00:31", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 17", 
+            "zone": 10, 
+            "created_at": "2009-06-15 09:00:31", 
+            "updated_at": "2009-06-15 09:00:31", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 18", 
+            "zone": 10, 
+            "created_at": "2009-06-15 09:04:11", 
+            "updated_at": "2009-06-15 09:04:11", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "ticket.ticket", 
+        "fields": {
+            "is_deleted": false, 
+            "name": "Bethoven Festival - 2009-06-13 - 20:00:00 - General - 19", 
+            "zone": 10, 
+            "created_at": "2009-06-15 09:04:11", 
+            "updated_at": "2009-06-15 09:04:11", 
+            "sell_by": null, 
+            "presentation": 87, 
+            "bought_by": 1
         }
     }
 ]
