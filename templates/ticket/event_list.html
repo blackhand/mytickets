@@ -2,15 +2,20 @@
 {% load paginator %}
 {% block title %}Eventos{% endblock %}
 {% block content %}
-<table>
+<table width="99%">
     {% for event in object_list %}
     <tr>
-        <td>
-            {% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}
-            <p><a href='{{ event.get_absolute_url }}'>{{event.artist }}, {{ event.name }}</a></p>
-            <p>{{ event.description }}</p>
+        <td><div class="thumbnail">{% if event.image %}{{ event.image.extra_thumbnails_tag.small }}{% endif %}</div></td>
+        <td><a href='{{ event.get_absolute_url }}' class="thumbnail_tit">{{event.artist }}, {{ event.name }}</a>
+            <p>{{ event.description }}</p>        
         </td>
-        <td><a class='button' href='{{ event.get_absolute_url }}'>Comprar</a></td>
+        <td><a href="{{ event.get_absolute_url }}" class="button">comprar</a></td>
+  </tr>
+    <tr>
+    	<td colspan="3">
+        <div class="thumbnail_line1"></div>
+        <div class="thumbnail_line2"></div>
+        </td>
     </tr>
 {% endfor %}
 </table>

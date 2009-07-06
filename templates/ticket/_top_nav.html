@@ -2,11 +2,11 @@
     <ul>
         {% if user.is_authenticated %}
         <li>{{user.first_name}} {{user.last_name}}<li> |
-        <li><a href='#'>Mi Perfil</a></li> |
+        <li><a href='#'>Mi Cuenta</a></li> |
         <li><a href='{% url logout %}'>Salir</a></li> |
-        {% else %}
-        <li><a href='{% url login %}'>Ingresar</a></li> |
+        {% else %} |        
+        <li><a href='{% url login %}'>Registrarse</a></li> |
         {% endif %}
-        <li><a href='#'>Preguntas Frecuentes</a></li>
+        <li><a href='#'>Preguntas Frecuentes</a></li> |
     </ul>
 </div>
