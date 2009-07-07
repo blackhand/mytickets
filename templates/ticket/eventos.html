@@ -4,15 +4,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>MaccTicket</title>
-<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/jquery.cycle.js"></script>
+<style type="text/css" media="all">
+@import "/static/main.css";
+</style>
 </head>
 
 <body>
+
 <div id="header">
-{%block navbar %}
-{% include "ticket/_top_nav.html" %}
-{% endblock navbar %}
+    {%block navbar %}
+    {% include "ticket/_top_nav.html" %}
+    {% endblock navbar %}
 </div>
+
 <div id="content">
 	<p></p>
     <img src="top-bg-gris.png" class="tableGraytop" align="middle" alt="" />

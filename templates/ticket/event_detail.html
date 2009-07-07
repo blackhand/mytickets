@@ -18,13 +18,12 @@
     </tr>
 </table>
 {% endblock %}
-{% block content %}
+{% block leftcontent %}
 {% with event.presentation_set.all as presentations %}
 {% if presentations %}
-<table class='eventdetail' border='2'>
+<table class='eventdetail'>
     <tr>
         <td>Listado de Posiciones</td>
-        <td>Mapa de ubicaciones</td>
     </tr>
     <tr>
         <td>
@@ -32,9 +31,6 @@
                 {{ form.as_p}}
                 <p><input type="submit" value="Comprar"></p>
             </form>
-        </td>
-        <td>
-            <img src='{{ MEDIA_URL }}default-auditorium.gif' />
         </td>
     </tr>
 
@@ -44,4 +40,12 @@
 <p>No hay presentacion programadas todavia</p>
 {% endif %}
 {% endwith %}
+{% endblock %}
+{% block rightcontent %}
+<table class 'eventmap'>
+    <tr><td>Mapa del Evento</td></tr>
+    <tr><td>
+            <img src='{{ MEDIA_URL }}default-auditorium.gif' />
+    </td></tr>
+</table>
 {% endblock %}
